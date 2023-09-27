@@ -1,0 +1,446 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+
+@media screen and (min-width: 1550px) {
+  .container {
+    max-width: 1440px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1560px) {
+  .logo_img a img {
+    width: 150px;
+  }
+
+  .main_menu ul li a {
+    font-size: 14px;
+    margin: 0px 5px;
+  }
+
+  .icon_menu ul li a {
+    font-size: 14px;
+    margin: 0px 6px;
+  }
+
+  .menu_mega_three {
+    column-gap: 20px;
+  }
+
+  .mega_five_dis {
+    margin-left: -140px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .logo_img a img {
+    width: 165px;
+  }
+
+  .main_menu ul li a {
+    font-size: 14px;
+    margin: 0px 6px;
+  }
+
+  .icon_menu ul li a {
+    font-size: 14px;
+    margin: 0px 5px;
+  }
+
+  .icon_menu ul li select {
+    font-size: 12px;
+  }
+
+  .main_menu ul li a span {
+    font-size: 10px;
+    margin-left: 2px;
+  }
+
+  .icon_menu ul li.cart_beg a span {
+    transform: scale(0.8);
+  }
+
+  .mega_menu_one_right_img {
+    padding-left: 10px;
+  }
+
+  .menu_mega_three {
+    column-gap: 20px;
+  }
+
+  .mega_five_dis {
+    margin-left: -150px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .logo_img a img {
+    width: 130px;
+  }
+
+  .main_menu ul li a {
+    font-size: 12px;
+    margin: 0px 5px;
+  }
+
+  .icon_menu ul li a {
+    font-size: 14px;
+    margin: 0px 5px;
+  }
+
+  .icon_menu ul li select {
+    font-size: 14px;
+  }
+
+  .main_menu ul li a span {
+    font-size: 10px;
+    margin-left: 2px;
+  }
+
+  .icon_menu ul li.cart_beg a span {
+    transform: scale(0.8);
+  }
+
+  .mega_one_menu_left_link ul li a {
+    font-size: 14px;
+  }
+
+  h3.mega_menu_heading {
+    font-size: 20px;
+  }
+
+  .mega_menu_one_middle_img {
+    margin-left: 0px;
+  }
+
+  .mega_menu_one_right_img {
+    padding-left: 20px;
+  }
+
+  .mega_menu_one_right_img_block h3 {
+    font-size: 18px;
+  }
+
+  .mega_menu_one {
+    top: 60px;
+    padding: 30px 0px;
+  }
+
+  .mega_two_link_item ul li a {
+    font-size: 14px;
+  }
+
+  .menu_mega_three {
+    column-gap: 15px;
+  }
+
+  .menu_mega_three_block p {
+    font-size: 14px;
+  }
+
+  .mega_four_middle_link ul li a {
+    font-size: 14px;
+  }
+
+  .mega_five_dis_box {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mega_five_dis {
+    margin-left: -150px;
+  }
+
+  .mega_five_dis_box_left p,
+  .mega_five_dis_box_right p {
+    font-size: 14px;
+  }
+
+  .megasix-box p {
+    font-size: 14px;
+  }
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* !=== Header area start === */
+  .logo {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo_img a img {
+    width: 160px;
+  }
+
+  .icon_menu ul li a {
+    margin: 0;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search {
+    padding: 15px;
+  }
+
+  .search-box {
+    padding: 25px 0px;
+  }
+
+  .top_search,
+  .sc-result {
+    padding: 0px 0px;
+  }
+
+  .sc-result-box {
+    column-gap: 25px;
+    padding: 0px 10px;
+  }
+
+  .shoppingitemone_left img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .mesureleft span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 1px;
+  }
+
+  .shoppingitemone_right p {
+    font-size: 14px;
+  }
+
+  .masure {
+    margin-top: 5px;
+  }
+
+  .action_button {
+    margin-top: 4px;
+  }
+
+  .shopingitem_main_right p {
+    font-size: 16px;
+  }
+
+  .couponbox {
+    display: block !important;
+  }
+
+  .couponbox_Right input {
+    width: 100%;
+  }
+
+  .pricePara p {
+    font-size: 12px;
+  }
+
+  .orderButton ul {
+    gap: 10px;
+  }
+
+  .orderButton ul li a {
+    width: 155px;
+    font-size: 14px;
+  }
+  /* !=== Header area end === */
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* !=== Header area start === */
+  .logo {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo_img a img {
+    width: 160px;
+  }
+
+  .icon_menu ul li a {
+    margin: 0;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search {
+    padding: 15px;
+  }
+
+  .search-box {
+    padding: 25px 0px;
+  }
+
+  .top_search,
+  .sc-result {
+    padding: 0px 0px;
+  }
+
+  .sc-result-box {
+    column-gap: 25px;
+    padding: 0px 10px;
+  }
+
+  .shoppingitemone_left img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .mesureleft span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 1px;
+  }
+
+  .shoppingitemone_right p {
+    font-size: 14px;
+  }
+
+  .masure {
+    margin-top: 5px;
+  }
+
+  .action_button {
+    margin-top: 4px;
+  }
+
+  .shopingitem_main_right p {
+    font-size: 16px;
+  }
+
+  .couponbox {
+    display: block !important;
+  }
+
+  .couponbox_Right input {
+    width: 100%;
+  }
+
+  .pricePara p {
+    font-size: 12px;
+  }
+
+  .orderButton ul {
+    gap: 10px;
+  }
+
+  .orderButton ul li a {
+    width: 155px;
+    font-size: 14px;
+  }
+  /* !=== Header area end === */
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+  /* !=== Header area start === */
+  .logo {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo_img a img {
+    width: 160px;
+  }
+
+  .icon_menu ul li a {
+    margin: 0;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search {
+    padding: 15px;
+  }
+
+  .search-box {
+    padding: 25px 0px;
+  }
+
+  .top_search,
+  .sc-result {
+    padding: 0px 0px;
+  }
+
+  .sc-result-box {
+    column-gap: 25px;
+    padding: 0px 10px;
+  }
+
+  .shoppingitemone_left img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .mesureleft span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 1px;
+  }
+
+  .shoppingitemone_right p {
+    font-size: 14px;
+  }
+
+  .masure {
+    margin-top: 5px;
+  }
+
+  .action_button {
+    margin-top: 4px;
+  }
+
+  .shopingitem_main_right p {
+    font-size: 16px;
+  }
+
+  .couponbox {
+    display: block !important;
+  }
+
+  .couponbox_Right input {
+    width: 100%;
+  }
+
+  .pricePara p {
+    font-size: 12px;
+  }
+
+  .orderButton ul {
+    gap: 10px;
+  }
+
+  .orderButton ul li a {
+    width: 155px;
+    font-size: 14px;
+  }
+  /* !=== Header area end === */
+}
