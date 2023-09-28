@@ -17,7 +17,7 @@
 
     // code for owl caursol
     $(".products-slider").owlCarousel({
-      loop: true,
+      loop: false,
       margin: 30,
       center: false,
       nav: false,
@@ -57,15 +57,27 @@
 
     var owl = $(".products-slider");
     owl.owlCarousel();
-    // Go to the next item
     $(".owl-next").click(function () {
       owl.trigger("next.owl.carousel");
     });
-    // Go to the previous item
     $(".owl-prev").click(function () {
-      // With optional speed parameter
-      // Parameters has to be in square bracket '[]'
       owl.trigger("prev.owl.carousel", [300]);
+    });
+
+    // marquee slider
+    $(".slick.marquee").slick({
+      speed: 5000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      centerMode: true,
+      cssEase: "linear",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      variableWidth: true,
+      infinite: true,
+      initialSlide: 1,
+      arrows: false,
+      buttons: false,
     });
   });
 })(jQuery);

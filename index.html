@@ -24,6 +24,10 @@
     <!-- Include Owl-Carusol -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"
+    />
 
     <!-- Main StyleSheet -->
     <link rel="stylesheet" href="css/style.css" />
@@ -41,23 +45,77 @@
     <![endif]-->
 
     <!-- header area start -->
-    <header class="sticky-top">
-      <div class="container">
-        <div
-          class="header_wrapper d-flex align-items-center justify-content-between"
-        >
-          <div class="logo d-flex d-lg-block">
-            <div class="bar d-block d-lg-none">
-              <span></span>
-              <span></span>
-              <span></span>
+    <section id="header" class="sticky-top">
+      <header>
+        <div class="container">
+          <div
+            class="header_wrapper d-flex align-items-center justify-content-between"
+          >
+            <div class="logo d-flex d-lg-block">
+              <div class="bar d-block d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="logo_img">
+                <a href="index.html">
+                  <img src="img/logo.svg" alt="logo images" />
+                </a>
+              </div>
+              <div class="icon_menu d-block d-lg-none">
+                <ul>
+                  <li>
+                    <a
+                      class="smallIconTigger"
+                      willopen="searchBox"
+                      href="JavaScript:void(0)"
+                      ><i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="logo_img">
-              <a href="index.html">
-                <img src="img/logo.svg" alt="logo images" />
-              </a>
+            <div class="main_menu d-none d-lg-block">
+              <ul>
+                <li menu-open="mega-one">
+                  <a href="JavaScript:void(0)"
+                    >All Fabrics
+                    <span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+                <li menu-open="mega-two">
+                  <a href="JavaScript:void(0)"
+                    >Fabric End-use
+                    <span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+                <li menu-open="mega-three">
+                  <a href="JavaScript:void(0)"
+                    >Industrial Fabrics
+                    <span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+                <li menu-open="mega-four">
+                  <a href="JavaScript:void(0)"
+                    >Characteristics
+                    <span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+                <li menu-open="mega-five">
+                  <a href="JavaScript:void(0)"
+                    >About Us
+                    <span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+                <li menu-open="mega-six">
+                  <a href="JavaScript:void(0)"
+                    >Our Services
+                    <span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+              </ul>
             </div>
-            <div class="icon_menu d-block d-lg-none">
+            <div class="icon_menu d-none d-lg-block">
               <ul>
                 <li>
                   <a
@@ -67,617 +125,135 @@
                     ><i class="fa-solid fa-magnifying-glass"></i>
                   </a>
                 </li>
+                <li class="cart_beg">
+                  <a willopen="shoppingCart" class="smallIconTigger" href="#"
+                    ><i class="fa-solid fa-bag-shopping"></i
+                    ><span class="item">12</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="smallIconTigger"
+                    willopen="login"
+                    href="JavaScript:void(0)"
+                    href="#"
+                    ><i class="fa-regular fa-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <select>
+                    <option>TH</option>
+                    <option>BN</option>
+                  </select>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="main_menu d-none d-lg-block">
-            <ul>
-              <li menu-open="mega-one">
-                <a href="JavaScript:void(0)"
-                  >All Fabrics
-                  <span><i class="fa-solid fa-chevron-down"></i></span
-                ></a>
-              </li>
-              <li menu-open="mega-two">
-                <a href="JavaScript:void(0)"
-                  >Fabric End-use
-                  <span><i class="fa-solid fa-chevron-down"></i></span
-                ></a>
-              </li>
-              <li menu-open="mega-three">
-                <a href="JavaScript:void(0)"
-                  >Industrial Fabrics
-                  <span><i class="fa-solid fa-chevron-down"></i></span
-                ></a>
-              </li>
-              <li menu-open="mega-four">
-                <a href="JavaScript:void(0)"
-                  >Characteristics
-                  <span><i class="fa-solid fa-chevron-down"></i></span
-                ></a>
-              </li>
-              <li menu-open="mega-five">
-                <a href="JavaScript:void(0)"
-                  >About Us <span><i class="fa-solid fa-chevron-down"></i></span
-                ></a>
-              </li>
-              <li menu-open="mega-six">
-                <a href="JavaScript:void(0)"
-                  >Our Services
-                  <span><i class="fa-solid fa-chevron-down"></i></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="icon_menu d-none d-lg-block">
-            <ul>
-              <li>
-                <a
-                  class="smallIconTigger"
-                  willopen="searchBox"
-                  href="JavaScript:void(0)"
-                  ><i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </li>
-              <li class="cart_beg">
-                <a willopen="shoppingCart" class="smallIconTigger" href="#"
-                  ><i class="fa-solid fa-bag-shopping"></i
-                  ><span class="item">12</span></a
-                >
-              </li>
-              <li>
-                <a
-                  class="smallIconTigger"
-                  willopen="login"
-                  href="JavaScript:void(0)"
-                  href="#"
-                  ><i class="fa-regular fa-user"></i
-                ></a>
-              </li>
-              <li>
-                <select>
-                  <option>TH</option>
-                  <option>BN</option>
-                </select>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
 
-      <!-- mega menu start -->
-      <div class="mega_menu_one megabox" id="mega-one">
-        <div class="container">
-          <div class="menu_menu_one_wrapper">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="mega_one_menu_left">
-                  <h3 class="mega_menu_heading">Fabric Type</h3>
-                  <div class="mega_one_menu_left_link">
-                    <ul>
-                      <li class="mhblink">
-                        <a data-hover="img/h2.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Cotton</a
-                        >
-                      </li>
-                      <li class="mhblink">
-                        <a data-hover="img/h3.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Natural Fibers</a
-                        >
-                      </li>
-                      <li class="mhblink">
-                        <a data-hover="img/h4.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Rayon</a
-                        >
-                      </li>
-                      <li class="mhblink">
-                        <a data-hover="img/h2.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Satin</a
-                        >
-                      </li>
-                      <li class="mhblink">
-                        <a data-hover="img/h3.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Recycle</a
-                        >
-                      </li>
-                      <li class="mhblink">
-                        <a data-hover="img/h4.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Spandex
-                        </a>
-                      </li>
-                      <li class="mhblink">
-                        <a data-hover="img/h2.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Ribbed</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <h3 class="mega_menu_heading mt-5">Sample Books</h3>
-                  <div class="mega_one_menu_left_link">
-                    <ul>
-                      <li class="mhblink">
-                        <a data-hover="img/h3.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >All Sample Books</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="mega_menu_one_middle_img middleOne">
-                  <img src="img/middle.png" alt="middle images" />
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="mega_menu_one_right_img">
-                  <div class="mega_menu_one_right_img_block">
-                    <a class="d-block" href="#"
-                      ><h3>
-                        Best Sellers
-                        <span><img src="img/blackarrow.png" alt="" /></span></h3
-                    ></a>
-                    <img src="img/cl1.png" alt="" />
-                  </div>
-                  <div
-                    class="mega_menu_one_right_img_block mega_menu_one_right_img_two"
-                  >
-                    <a class="d-block" href="#"
-                      ><h3>
-                        Best Sellers
-                        <span><img src="img/blackarrow.png" alt="" /></span></h3
-                    ></a>
-                    <img src="img/cl1.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mega_menu_one megabox" id="mega-two">
-        <div class="container">
-          <div class="menu_menu_one_wrapper">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="mega_two_link">
-                  <h3 class="mega_menu_heading">Fashion Fabrics</h3>
-                  <div class="mega_two_link_item">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Shirt</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >T-Shirt</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Dress</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Skirt</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>Pants
-                          / Trousers</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>Denim
-                          Jeans</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Outerwear / Coat</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Swimwear</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Lingerie</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Sleepwear</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Loungewear</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>Suits
-                          & tie</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>All
-                          Fashion Fabrics</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="mega_two_link">
-                  <h3 class="mega_menu_heading">Homeware Fabrics</h3>
-                  <div class="mega_two_link_item">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Curtain</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Furniture</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>Table
-                          Cloth</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>Cusion
-                          & Pillow</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Bedding</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>Rug</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Lighting</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Wallpaper</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>All
-                          Homeware Fabrics</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="mega_two_link">
-                  <h3 class="mega_menu_heading">Seasonal Fabrics</h3>
-                  <div class="mega_two_link_item">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Chinese New Year</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>New
-                          Year 2024</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Valentine’s</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Christmas</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span
-                          >Halloween</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/arrow.png" alt="" /></span>All
-                          Seasonal Fabrics</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="mega_menu_one_right_img ps-0">
-                  <div class="mega_menu_one_right_img_block">
-                    <a class="d-block" href="#"
-                      ><h3>
-                        Best Sellers
-                        <span><img src="img/blackarrow.png" alt="" /></span></h3
-                    ></a>
-                    <img src="img/cl1.png" alt="" />
-                  </div>
-                  <div
-                    class="mega_menu_one_right_img_block mega_menu_one_right_img_two"
-                  >
-                    <a class="d-block" href="#"
-                      ><h3>
-                        Best Sellers
-                        <span><img src="img/blackarrow.png" alt="" /></span></h3
-                    ></a>
-                    <img src="img/cl1.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mega_menu_one megabox" id="mega-three">
-        <div class="container">
-          <div class="menu_menu_one_wrapper">
-            <div class="menu_mega_three">
-              <div class="menu_mega_three_block">
-                <img src="img/fab1.png" alt="" />
-                <p>
-                  Interior <br />
-                  & Furnitures
-                </p>
-              </div>
-              <div class="menu_mega_three_block">
-                <img src="img/fab2.png" alt="" />
-                <p>
-                  Automotives <br />
-                  & Airlines
-                </p>
-              </div>
-              <div class="menu_mega_three_block">
-                <img src="img/fab3.png" alt="" />
-                <p>Medical Graded</p>
-              </div>
-              <div class="menu_mega_three_block">
-                <img src="img/fab4.png" alt="" />
-                <p>
-                  Art, Crafts <br />
-                  Entertainment
-                </p>
-              </div>
-              <div class="menu_mega_three_block">
-                <img src="img/fab5.png" alt="" />
-                <p>
-                  Uniform & Service <br />
-                  Industry
-                </p>
-              </div>
-              <div class="menu_mega_three_block">
-                <img src="img/fab6.png" alt="" />
-                <p>
-                  Agriculture & <br />
-                  Manufacturing
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mega_menu_one megabox" id="mega-four">
-        <div class="container">
-          <div class="menu_menu_one_wrapper">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="mega_four_left">
-                  <h3 class="mega_menu_heading">Characters</h3>
-                  <div class="mega_one_menu_left_link">
-                    <ul>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h2.png" href="#" class=""
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Accessorized
-                        </a>
-                      </li>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h3.png" href="#" class=""
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Shiny</a
-                        >
-                      </li>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h4.png" href="#" class=""
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Ribbed</a
-                        >
-                      </li>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h2.png" href="#" class=""
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Textured</a
-                        >
-                      </li>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h3.png" href="#" class=""
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Stretchy</a
-                        >
-                      </li>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h4.png" href="#" class=""
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Woven
-                        </a>
-                      </li>
-                      <li class="mhblinktwo">
-                        <a data-hover-two="img/h2.png" href="#"
-                          ><span
-                            ><img src="img/arrow.png" alt="arrow_img" /></span
-                          >Interlining</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="mega_four_middle">
-                  <h3 class="mega_menu_heading">Browse by Color</h3>
-                  <div class="mega_four_middle_link">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/cp1.png" alt="" /></span>All
-                          Light Tone</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><span><img src="img/cp2.png" alt="" /></span>All Dark
-                          Tone</a
-                        >
-                      </li>
-                      <li class="cpWhite">
-                        <a href="#"><span></span>White</a>
-                      </li>
-                      <li class="cpBlack">
-                        <a href="#"><span></span>Black</a>
-                      </li>
-                      <li class="cpBeige">
-                        <a href="#"><span></span>Beige</a>
-                      </li>
-                      <li class="cpGrey">
-                        <a href="#"><span> </span>Grey</a>
-                      </li>
-                      <li class="cpRed">
-                        <a href="#"><span> </span>Red</a>
-                      </li>
-                      <li class="cpYellow">
-                        <a href="#"><span> </span>Yellow</a>
-                      </li>
-                      <li class="cpBlue">
-                        <a href="#"><span> </span>Blue</a>
-                      </li>
-                      <li class="cpGreen">
-                        <a href="#"><span> </span>Green</a>
-                      </li>
-                      <li class="cpPink">
-                        <a href="#"><span></span>Pink</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="mega_menu_one_middle_img middleTwo">
-                  <img src="img/middle.png" alt="middle images" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mega_menu_one megabox" id="mega-five">
-        <div class="container">
-          <div class="menu_menu_one_wrapper">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="mega_five_left">
-                  <div class="mega_two_link">
-                    <h3 class="mega_menu_heading">About Us</h3>
-                    <div class="mega_two_link_item">
+        <!-- mega menu start -->
+        <div class="mega_menu_one megabox" id="mega-one">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="mega_one_menu_left">
+                    <h3 class="mega_menu_heading">Fabric Type</h3>
+                    <div class="mega_one_menu_left_link">
                       <ul>
-                        <li><a href="#">About Bulliontex</a></li>
-                        <li><a href="#">Fabric Showroom</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Team Bullion</a></li>
-                        <li><a href="#">Tailors Directory</a></li>
+                        <li class="mhblink">
+                          <a data-hover="img/h2.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Cotton</a
+                          >
+                        </li>
+                        <li class="mhblink">
+                          <a data-hover="img/h3.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Natural Fibers</a
+                          >
+                        </li>
+                        <li class="mhblink">
+                          <a data-hover="img/h4.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Rayon</a
+                          >
+                        </li>
+                        <li class="mhblink">
+                          <a data-hover="img/h2.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Satin</a
+                          >
+                        </li>
+                        <li class="mhblink">
+                          <a data-hover="img/h3.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Recycle</a
+                          >
+                        </li>
+                        <li class="mhblink">
+                          <a data-hover="img/h4.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Spandex
+                          </a>
+                        </li>
+                        <li class="mhblink">
+                          <a data-hover="img/h2.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Ribbed</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="mega_menu_heading mt-5">Sample Books</h3>
+                    <div class="mega_one_menu_left_link">
+                      <ul>
+                        <li class="mhblink">
+                          <a data-hover="img/h3.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >All Sample Books</a
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="mega_five_dis">
-                  <div class="mega_five_dis_img">
-                    <img src="img/fas.png" alt="" />
+                <div class="col-lg-5">
+                  <div class="mega_menu_one_middle_img middleOne">
+                    <img src="img/middle.png" alt="middle images" />
                   </div>
-                  <div class="mega_five_dis_box d-flex justify-content-between">
-                    <div class="mega_five_dis_box_left">
-                      <p>Store Location <a href="#">Get Direction</a></p>
-                      <p>437/21-22 Tha Dindaeng Rd</p>
-                      <p>Somdejchaophraya Klongsan</p>
-                      <p>Bangkok 10600</p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mega_menu_one_right_img">
+                    <div class="mega_menu_one_right_img_block">
+                      <a class="d-block" href="#"
+                        ><h3>
+                          Best Sellers
+                          <span
+                            ><img src="img/blackarrow.png" alt=""
+                          /></span></h3
+                      ></a>
+                      <img src="img/cl1.png" alt="" />
                     </div>
-                    <div class="mega_five_dis_box_right">
-                      <p>Store Hour</p>
-                      <p><span>Monday - Friday</span> 9.00 - 18.00</p>
-                      <p><span>Saturday - Sunday</span> 9.00 - 17.00</p>
+                    <div
+                      class="mega_menu_one_right_img_block mega_menu_one_right_img_two"
+                    >
+                      <a class="d-block" href="#"
+                        ><h3>
+                          Best Sellers
+                          <span
+                            ><img src="img/blackarrow.png" alt=""
+                          /></span></h3
+                      ></a>
+                      <img src="img/cl1.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -685,910 +261,1360 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="mega_menu_one megabox" id="mega-six">
-        <div class="container">
-          <div class="menu_menu_one_wrapper">
-            <div class="megasix_block">
-              <div class="megasix-box megasix-box-one text-center">
-                <img src="img/abs1.png" alt="" />
-                <p>Fabrics Showroom & Constultation</p>
-              </div>
-              <div class="megasix-box megasix-box-two text-center">
-                <img src="img/abs2.png" alt="" />
-                <p>Fabric Sourcing</p>
-              </div>
-              <div class="megasix-box megasix-box-three text-center">
-                <img src="img/abs3.png" alt="" />
-                <p>Made to Order & Digital Print</p>
-              </div>
-              <div class="megasix-box megasix-box-four text-center">
-                <img src="img/abs4.png" alt="" />
-                <p>Warping & Sizing</p>
-              </div>
-              <div class="megasix-box megasix-box-five text-center">
-                <img src="img/abs5.png" alt="" />
-                <p>Fabric Calculator</p>
-              </div>
-              <div class="megasix-box megasix-box-six text-center">
-                <img src="img/abs6.png" alt="" />
-                <p>Kappra Café</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- mega menu end -->
-
-      <!-- small part menu start -->
-      <div class="search rightsideTarget" id="searchBox">
-        <div
-          class="search-heading d-flex align-items-center justify-content-between"
-        >
-          <h3>Search</h3>
-          <button willclose="searchBox" id="searchClose">
-            <img src="img/close.png" alt="" />
-          </button>
-        </div>
-        <div class="search-box">
-          <input autocomplete="off" type="text" placeholder="Search Fabrics" />
-        </div>
-        <div class="top_search">
-          <p>Top Search</p>
-          <ul>
-            <li><a href="JavaScript:void(0)">Cotton</a></li>
-            <li><a href="JavaScript:void(0)">Polyester</a></li>
-            <li><a href="JavaScript:void(0)">Rayon</a></li>
-            <li><a href="JavaScript:void(0)">Satin</a></li>
-            <li><a href="JavaScript:void(0)">Recycle</a></li>
-            <li><a href="JavaScript:void(0)">Cotton</a></li>
-            <li><a href="JavaScript:void(0)">Polyester</a></li>
-            <li><a href="JavaScript:void(0)">Rayon</a></li>
-            <li><a href="JavaScript:void(0)">Satin</a></li>
-            <li><a href="JavaScript:void(0)">Spandex</a></li>
-          </ul>
-        </div>
-        <div class="sc-result">
-          <div
-            class="sc-result-heading d-flex align-items-center justify-content-between"
-          >
-            <p class="d-flex align-items-center">
-              Search result for “<span id="searchValue">cotton</span>”
-            </p>
-            <a href="#">Show All</a>
-          </div>
-          <div class="sc-result-box">
-            <div class="sc-result-box-one">
-              <img src="img/khata.png" alt="" />
-              <div class="sc-result-box-one-content">
-                <p>Cotton Puff</p>
-                <span>60</span>
-              </div>
-            </div>
-            <div class="sc-result-box-one">
-              <img src="img/khata.png" alt="" />
-              <div class="sc-result-box-one-content">
-                <p>Cotton Puff</p>
-                <span>60</span>
-              </div>
-            </div>
-            <div class="sc-result-box-one">
-              <img src="img/khata.png" alt="" />
-              <div class="sc-result-box-one-content">
-                <p>Cotton Puff</p>
-                <span>60</span>
-              </div>
-            </div>
-            <div class="sc-result-box-one">
-              <img src="img/khata.png" alt="" />
-              <div class="sc-result-box-one-content">
-                <p>Cotton Puff</p>
-                <span>60</span>
-              </div>
-            </div>
-            <div class="sc-result-box-one">
-              <img src="img/khata.png" alt="" />
-              <div class="sc-result-box-one-content">
-                <p>Cotton Puff</p>
-                <span>60</span>
-              </div>
-            </div>
-            <div class="sc-see-all">
-              <a href="#">Show All</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="search rightsideTarget" id="login">
-        <div
-          class="search-heading d-flex align-items-center justify-content-between"
-        >
-          <h3><span id="formHeadingText">Login</span> Your Account</h3>
-          <button willclose="login" id="searchClose">
-            <img src="img/close.png" alt="" />
-          </button>
-        </div>
-        <div class="loginSocial">
-          <ul>
-            <li><img src="img/fb.png" alt="" /></li>
-            <li><img src="img/google.png" alt="" /></li>
-          </ul>
-        </div>
-        <div class="lgtabbutton">
-          <ul>
-            <li text="Login" class="tabActive" tab-open="login">Login</li>
-            <li text="Register" tab-open="reg">Register</li>
-          </ul>
-        </div>
-        <div id="login" class="login_form">
-          <form>
-            <div class="login_form_wrapper">
-              <div class="login_form_input">
-                <label>Email Address or Phone Number</label>
-                <input type="email" />
-              </div>
-              <div class="login_form_input mt-3">
-                <label>Password</label>
-                <div class="login_form_password">
-                  <input id="password" type="password" />
-                  <span
-                    ><i id="formEye" class="fa-regular fa-eye-slash"></i
-                  ></span>
+        <div class="mega_menu_one megabox" id="mega-two">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="mega_two_link">
+                    <h3 class="mega_menu_heading">Fashion Fabrics</h3>
+                    <div class="mega_two_link_item">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Shirt</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >T-Shirt</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Dress</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Skirt</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Pants / Trousers</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Denim Jeans</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Outerwear / Coat</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Swimwear</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Lingerie</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Sleepwear</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Loungewear</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Suits & tie</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span>All
+                            Fashion Fabrics</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <p
-                  class="smallIconTigger text-end"
-                  willopen="resetPasswords"
-                  class="text-end"
-                >
-                  Forgot Password?
-                </p>
-              </div>
-              <div class="login_form_submit text-center">
-                <button type="submit">Login</button>
+                <div class="col-lg-3">
+                  <div class="mega_two_link">
+                    <h3 class="mega_menu_heading">Homeware Fabrics</h3>
+                    <div class="mega_two_link_item">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Curtain</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Furniture</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Table Cloth</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Cusion & Pillow</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Bedding</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Rug</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Lighting</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Wallpaper</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span>All
+                            Homeware Fabrics</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="mega_two_link">
+                    <h3 class="mega_menu_heading">Seasonal Fabrics</h3>
+                    <div class="mega_two_link_item">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Chinese New Year</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span>New
+                            Year 2024</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Valentine’s</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Christmas</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span
+                            >Halloween</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/arrow.png" alt="" /></span>All
+                            Seasonal Fabrics</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="mega_menu_one_right_img ps-0">
+                    <div class="mega_menu_one_right_img_block">
+                      <a class="d-block" href="#"
+                        ><h3>
+                          Best Sellers
+                          <span
+                            ><img src="img/blackarrow.png" alt=""
+                          /></span></h3
+                      ></a>
+                      <img src="img/cl1.png" alt="" />
+                    </div>
+                    <div
+                      class="mega_menu_one_right_img_block mega_menu_one_right_img_two"
+                    >
+                      <a class="d-block" href="#"
+                        ><h3>
+                          Best Sellers
+                          <span
+                            ><img src="img/blackarrow.png" alt=""
+                          /></span></h3
+                      ></a>
+                      <img src="img/cl1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-        <div id="reg" class="login_form reg_form">
-          <form>
-            <div class="login_form_wrapper">
-              <div class="login_form_input">
-                <label>Email Address or Phone Number</label>
-                <input type="email" />
-              </div>
-
-              <div class="login_form_input mt-3">
-                <label>Full Name</label>
-                <input type="text" />
-              </div>
-
-              <div class="login_form_input mt-3">
-                <label>Password</label>
-                <input type="password" />
-              </div>
-
-              <div class="login_form_input mt-3">
-                <label>Confirm Password</label>
-                <input type="password" />
-              </div>
-
-              <div class="login_form_submit text-center">
-                <button type="submit">Register</button>
+        <div class="mega_menu_one megabox" id="mega-three">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <div class="menu_mega_three">
+                <div class="menu_mega_three_block">
+                  <img src="img/fab1.png" alt="" />
+                  <p>
+                    Interior <br />
+                    & Furnitures
+                  </p>
+                </div>
+                <div class="menu_mega_three_block">
+                  <img src="img/fab2.png" alt="" />
+                  <p>
+                    Automotives <br />
+                    & Airlines
+                  </p>
+                </div>
+                <div class="menu_mega_three_block">
+                  <img src="img/fab3.png" alt="" />
+                  <p>Medical Graded</p>
+                </div>
+                <div class="menu_mega_three_block">
+                  <img src="img/fab4.png" alt="" />
+                  <p>
+                    Art, Crafts <br />
+                    Entertainment
+                  </p>
+                </div>
+                <div class="menu_mega_three_block">
+                  <img src="img/fab5.png" alt="" />
+                  <p>
+                    Uniform & Service <br />
+                    Industry
+                  </p>
+                </div>
+                <div class="menu_mega_three_block">
+                  <img src="img/fab6.png" alt="" />
+                  <p>
+                    Agriculture & <br />
+                    Manufacturing
+                  </p>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-
-      <div class="search rightsideTarget" id="resetPasswords">
-        <div
-          class="search-heading d-flex align-items-center justify-content-between"
-        >
-          <h3>Reset Your Password</h3>
-          <button id="allClose">
-            <img src="img/close.png" alt="" />
-          </button>
-        </div>
-
-        <div id="login" class="login_form">
-          <form>
-            <div class="login_form_wrapper">
-              <div class="login_form_input mt-3">
-                <label>Email Address or Phone Number</label>
-                <input type="email" />
-                <p id="backtologin" class="text-end">Back to Login</p>
-              </div>
-              <div class="login_form_submit text-center">
-                <button type="submit">Reset Password</button>
+        <div class="mega_menu_one megabox" id="mega-four">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="mega_four_left">
+                    <h3 class="mega_menu_heading">Characters</h3>
+                    <div class="mega_one_menu_left_link">
+                      <ul>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h2.png" href="#" class=""
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Accessorized
+                          </a>
+                        </li>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h3.png" href="#" class=""
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Shiny</a
+                          >
+                        </li>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h4.png" href="#" class=""
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Ribbed</a
+                          >
+                        </li>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h2.png" href="#" class=""
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Textured</a
+                          >
+                        </li>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h3.png" href="#" class=""
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Stretchy</a
+                          >
+                        </li>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h4.png" href="#" class=""
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Woven
+                          </a>
+                        </li>
+                        <li class="mhblinktwo">
+                          <a data-hover-two="img/h2.png" href="#"
+                            ><span
+                              ><img src="img/arrow.png" alt="arrow_img" /></span
+                            >Interlining</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="mega_four_middle">
+                    <h3 class="mega_menu_heading">Browse by Color</h3>
+                    <div class="mega_four_middle_link">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/cp1.png" alt="" /></span>All
+                            Light Tone</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><span><img src="img/cp2.png" alt="" /></span>All
+                            Dark Tone</a
+                          >
+                        </li>
+                        <li class="cpWhite">
+                          <a href="#"><span></span>White</a>
+                        </li>
+                        <li class="cpBlack">
+                          <a href="#"><span></span>Black</a>
+                        </li>
+                        <li class="cpBeige">
+                          <a href="#"><span></span>Beige</a>
+                        </li>
+                        <li class="cpGrey">
+                          <a href="#"><span> </span>Grey</a>
+                        </li>
+                        <li class="cpRed">
+                          <a href="#"><span> </span>Red</a>
+                        </li>
+                        <li class="cpYellow">
+                          <a href="#"><span> </span>Yellow</a>
+                        </li>
+                        <li class="cpBlue">
+                          <a href="#"><span> </span>Blue</a>
+                        </li>
+                        <li class="cpGreen">
+                          <a href="#"><span> </span>Green</a>
+                        </li>
+                        <li class="cpPink">
+                          <a href="#"><span></span>Pink</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mega_menu_one_middle_img middleTwo">
+                    <img src="img/middle.png" alt="middle images" />
+                  </div>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+        <div class="mega_menu_one megabox" id="mega-five">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="mega_five_left">
+                    <div class="mega_two_link">
+                      <h3 class="mega_menu_heading">About Us</h3>
+                      <div class="mega_two_link_item">
+                        <ul>
+                          <li><a href="#">About Bulliontex</a></li>
+                          <li><a href="#">Fabric Showroom</a></li>
+                          <li><a href="#">FAQs</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Team Bullion</a></li>
+                          <li><a href="#">Tailors Directory</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mega_five_dis">
+                    <div class="mega_five_dis_img">
+                      <img src="img/fas.png" alt="" />
+                    </div>
+                    <div
+                      class="mega_five_dis_box d-flex justify-content-between"
+                    >
+                      <div class="mega_five_dis_box_left">
+                        <p>Store Location <a href="#">Get Direction</a></p>
+                        <p>437/21-22 Tha Dindaeng Rd</p>
+                        <p>Somdejchaophraya Klongsan</p>
+                        <p>Bangkok 10600</p>
+                      </div>
+                      <div class="mega_five_dis_box_right">
+                        <p>Store Hour</p>
+                        <p><span>Monday - Friday</span> 9.00 - 18.00</p>
+                        <p><span>Saturday - Sunday</span> 9.00 - 17.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mega_menu_one megabox" id="mega-six">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <div class="megasix_block">
+                <div class="megasix-box megasix-box-one text-center">
+                  <img src="img/abs1.png" alt="" />
+                  <p>Fabrics Showroom & Constultation</p>
+                </div>
+                <div class="megasix-box megasix-box-two text-center">
+                  <img src="img/abs2.png" alt="" />
+                  <p>Fabric Sourcing</p>
+                </div>
+                <div class="megasix-box megasix-box-three text-center">
+                  <img src="img/abs3.png" alt="" />
+                  <p>Made to Order & Digital Print</p>
+                </div>
+                <div class="megasix-box megasix-box-four text-center">
+                  <img src="img/abs4.png" alt="" />
+                  <p>Warping & Sizing</p>
+                </div>
+                <div class="megasix-box megasix-box-five text-center">
+                  <img src="img/abs5.png" alt="" />
+                  <p>Fabric Calculator</p>
+                </div>
+                <div class="megasix-box megasix-box-six text-center">
+                  <img src="img/abs6.png" alt="" />
+                  <p>Kappra Café</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mega menu end -->
 
-      <div class="search rightsideTarget cartbag_main" id="shoppingCart">
-        <div class="bg-cart">
+        <!-- small part menu start -->
+        <div class="search rightsideTarget" id="searchBox">
           <div
             class="search-heading d-flex align-items-center justify-content-between"
           >
-            <h3>In Your Bag (3)</h3>
-            <button willclose="shoppingCart" id="searchClose">
+            <h3>Search</h3>
+            <button willclose="searchBox" id="searchClose">
               <img src="img/close.png" alt="" />
             </button>
           </div>
-          <div class="shoppingwrapper">
-            <div class="shoppingitemone d-flex justify-content-between">
-              <div class="shopingitem_main_left d-flex align-items-center">
-                <div class="shoppingitemone_left">
-                  <img src="img/khata.png" alt="" />
-                </div>
-                <div class="shoppingitemone_right">
-                  <p>Cotton Puff <span>60"</span></p>
-                  <div class="masure d-flex">
-                    <div class="mesureleft">
-                      <span></span>
-                    </div>
-                    <div class="mesureRight">
-                      <p>Leaf Green</p>
-                      <p>x2 Yards</p>
-                    </div>
-                  </div>
-                  <div class="action_button">
-                    <ul>
-                      <li><a href="#">Edit</a></li>
-                      <li><a href="#">Remove</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="shopingitem_main_right">
-                <p>120.00</p>
-              </div>
-            </div>
-            <div class="shoppingitemone d-flex justify-content-between">
-              <div class="shopingitem_main_left d-flex align-items-center">
-                <div class="shoppingitemone_left">
-                  <img src="img/khata.png" alt="" />
-                </div>
-                <div class="shoppingitemone_right">
-                  <p>Cotton Puff <span>60"</span></p>
-                  <div class="masure d-flex">
-                    <div class="mesureleft">
-                      <span></span>
-                    </div>
-                    <div class="mesureRight">
-                      <p>Leaf Green</p>
-                      <p>x2 Yards</p>
-                    </div>
-                  </div>
-                  <div class="action_button">
-                    <ul>
-                      <li><a href="#">Edit</a></li>
-                      <li><a href="#">Remove</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="shopingitem_main_right">
-                <p>120.00</p>
-              </div>
-            </div>
-            <div class="shoppingitemone d-flex justify-content-between">
-              <div class="shopingitem_main_left d-flex align-items-center">
-                <div class="shoppingitemone_left">
-                  <img src="img/khata.png" alt="" />
-                </div>
-                <div class="shoppingitemone_right">
-                  <p>Cotton Puff <span>60"</span></p>
-                  <div class="masure d-flex">
-                    <div class="mesureleft">
-                      <span></span>
-                    </div>
-                    <div class="mesureRight">
-                      <p>Leaf Green</p>
-                      <p>x2 Yards</p>
-                    </div>
-                  </div>
-                  <div class="action_button">
-                    <ul>
-                      <li><a href="#">Edit</a></li>
-                      <li><a href="#">Remove</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="shopingitem_main_right">
-                <p>120.00</p>
-              </div>
-            </div>
-            <div class="shoppingitemone d-flex justify-content-between">
-              <div class="shopingitem_main_left d-flex align-items-center">
-                <div class="shoppingitemone_left">
-                  <img src="img/khata.png" alt="" />
-                </div>
-                <div class="shoppingitemone_right">
-                  <p>Cotton Puff <span>60"</span></p>
-                  <div class="masure d-flex">
-                    <div class="mesureleft">
-                      <span></span>
-                    </div>
-                    <div class="mesureRight">
-                      <p>Leaf Green</p>
-                      <p>x2 Yards</p>
-                    </div>
-                  </div>
-                  <div class="action_button">
-                    <ul>
-                      <li><a href="#">Edit</a></li>
-                      <li><a href="#">Remove</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="shopingitem_main_right">
-                <p>120.00</p>
-              </div>
-            </div>
-            <div class="shoppingitemone d-flex justify-content-between">
-              <div class="shopingitem_main_left d-flex align-items-center">
-                <div class="shoppingitemone_left">
-                  <img src="img/khata.png" alt="" />
-                </div>
-                <div class="shoppingitemone_right">
-                  <p>Cotton Puff <span>60"</span></p>
-                  <div class="masure d-flex">
-                    <div class="mesureleft">
-                      <span></span>
-                    </div>
-                    <div class="mesureRight">
-                      <p>Leaf Green</p>
-                      <p>x2 Yards</p>
-                    </div>
-                  </div>
-                  <div class="action_button">
-                    <ul>
-                      <li><a href="#">Edit</a></li>
-                      <li><a href="#">Remove</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="shopingitem_main_right">
-                <p>120.00</p>
-              </div>
-            </div>
-            <div class="shoppingitemone d-flex justify-content-between">
-              <div class="shopingitem_main_left d-flex align-items-center">
-                <div class="shoppingitemone_left">
-                  <img src="img/khata.png" alt="" />
-                </div>
-                <div class="shoppingitemone_right">
-                  <p>Cotton Puff <span>60"</span></p>
-                  <div class="masure d-flex">
-                    <div class="mesureleft">
-                      <span></span>
-                    </div>
-                    <div class="mesureRight">
-                      <p>Leaf Green</p>
-                      <p>x2 Yards</p>
-                    </div>
-                  </div>
-                  <div class="action_button">
-                    <ul>
-                      <li><a href="#">Edit</a></li>
-                      <li><a href="#">Remove</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="shopingitem_main_right">
-                <p>120.00</p>
-              </div>
-            </div>
+          <div class="search-box">
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Search Fabrics"
+            />
           </div>
-          <div class="couponcode">
+          <div class="top_search">
+            <p>Top Search</p>
+            <ul>
+              <li><a href="JavaScript:void(0)">Cotton</a></li>
+              <li><a href="JavaScript:void(0)">Polyester</a></li>
+              <li><a href="JavaScript:void(0)">Rayon</a></li>
+              <li><a href="JavaScript:void(0)">Satin</a></li>
+              <li><a href="JavaScript:void(0)">Recycle</a></li>
+              <li><a href="JavaScript:void(0)">Cotton</a></li>
+              <li><a href="JavaScript:void(0)">Polyester</a></li>
+              <li><a href="JavaScript:void(0)">Rayon</a></li>
+              <li><a href="JavaScript:void(0)">Satin</a></li>
+              <li><a href="JavaScript:void(0)">Spandex</a></li>
+            </ul>
+          </div>
+          <div class="sc-result">
             <div
-              class="couponbox d-flex align-items-center justify-content-between"
+              class="sc-result-heading d-flex align-items-center justify-content-between"
             >
-              <div class="couponbox_left">
-                <p>Discount Coupon</p>
-              </div>
-              <div class="couponbox_Right d-flex align-items-center">
-                <input
-                  autocomplete="off"
-                  id="disInput"
-                  placeholder="Discount Code"
-                  type="text"
-                />
-                <button id="apply">Apply</button>
-              </div>
-            </div>
-            <div class="pricetable">
-              <div class="totalpc">
-                <h4>Total Price</h4>
-                <span>360.00</span>
-              </div>
-              <div class="afterdiscount"></div>
-            </div>
-            <div class="pricePara mt-2">
-              <p class="text-end">
-                Price does not include tax and delivery charges.
+              <p class="d-flex align-items-center">
+                Search result for “<span id="searchValue">cotton</span>”
               </p>
+              <a href="#">Show All</a>
+            </div>
+            <div class="sc-result-box">
+              <div class="sc-result-box-one">
+                <img src="img/khata.png" alt="" />
+                <div class="sc-result-box-one-content">
+                  <p>Cotton Puff</p>
+                  <span>60</span>
+                </div>
+              </div>
+              <div class="sc-result-box-one">
+                <img src="img/khata.png" alt="" />
+                <div class="sc-result-box-one-content">
+                  <p>Cotton Puff</p>
+                  <span>60</span>
+                </div>
+              </div>
+              <div class="sc-result-box-one">
+                <img src="img/khata.png" alt="" />
+                <div class="sc-result-box-one-content">
+                  <p>Cotton Puff</p>
+                  <span>60</span>
+                </div>
+              </div>
+              <div class="sc-result-box-one">
+                <img src="img/khata.png" alt="" />
+                <div class="sc-result-box-one-content">
+                  <p>Cotton Puff</p>
+                  <span>60</span>
+                </div>
+              </div>
+              <div class="sc-result-box-one">
+                <img src="img/khata.png" alt="" />
+                <div class="sc-result-box-one-content">
+                  <p>Cotton Puff</p>
+                  <span>60</span>
+                </div>
+              </div>
+              <div class="sc-see-all">
+                <a href="#">Show All</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="orderButton">
-          <ul>
-            <li><a href="#">Request Quotation</a></li>
-            <li><a href="#">Process Order</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- small part menu end -->
 
-      <!-- responsive_menu part start -->
-      <div class="mobile_menu" id="mobile_main_menu">
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div class="mobile_menu_heading text-end">
-              <button id="close_mobile_menu">
+        <div class="search rightsideTarget" id="login">
+          <div
+            class="search-heading d-flex align-items-center justify-content-between"
+          >
+            <h3><span id="formHeadingText">Login</span> Your Account</h3>
+            <button willclose="login" id="searchClose">
+              <img src="img/close.png" alt="" />
+            </button>
+          </div>
+          <div class="loginSocial">
+            <ul>
+              <li><img src="img/fb.png" alt="" /></li>
+              <li><img src="img/google.png" alt="" /></li>
+            </ul>
+          </div>
+          <div class="lgtabbutton">
+            <ul>
+              <li text="Login" class="tabActive" tab-open="login">Login</li>
+              <li text="Register" tab-open="reg">Register</li>
+            </ul>
+          </div>
+          <div id="login" class="login_form">
+            <form>
+              <div class="login_form_wrapper">
+                <div class="login_form_input">
+                  <label>Email Address or Phone Number</label>
+                  <input type="email" />
+                </div>
+                <div class="login_form_input mt-3">
+                  <label>Password</label>
+                  <div class="login_form_password">
+                    <input id="password" type="password" />
+                    <span
+                      ><i id="formEye" class="fa-regular fa-eye-slash"></i
+                    ></span>
+                  </div>
+                  <p
+                    class="smallIconTigger text-end"
+                    willopen="resetPasswords"
+                    class="text-end"
+                  >
+                    Forgot Password?
+                  </p>
+                </div>
+                <div class="login_form_submit text-center">
+                  <button type="submit">Login</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="reg" class="login_form reg_form">
+            <form>
+              <div class="login_form_wrapper">
+                <div class="login_form_input">
+                  <label>Email Address or Phone Number</label>
+                  <input type="email" />
+                </div>
+
+                <div class="login_form_input mt-3">
+                  <label>Full Name</label>
+                  <input type="text" />
+                </div>
+
+                <div class="login_form_input mt-3">
+                  <label>Password</label>
+                  <input type="password" />
+                </div>
+
+                <div class="login_form_input mt-3">
+                  <label>Confirm Password</label>
+                  <input type="password" />
+                </div>
+
+                <div class="login_form_submit text-center">
+                  <button type="submit">Register</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="search rightsideTarget" id="resetPasswords">
+          <div
+            class="search-heading d-flex align-items-center justify-content-between"
+          >
+            <h3>Reset Your Password</h3>
+            <button id="allClose">
+              <img src="img/close.png" alt="" />
+            </button>
+          </div>
+
+          <div id="login" class="login_form">
+            <form>
+              <div class="login_form_wrapper">
+                <div class="login_form_input mt-3">
+                  <label>Email Address or Phone Number</label>
+                  <input type="email" />
+                  <p id="backtologin" class="text-end">Back to Login</p>
+                </div>
+                <div class="login_form_submit text-center">
+                  <button type="submit">Reset Password</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="search rightsideTarget cartbag_main" id="shoppingCart">
+          <div class="bg-cart">
+            <div
+              class="search-heading d-flex align-items-center justify-content-between"
+            >
+              <h3>In Your Bag (3)</h3>
+              <button willclose="shoppingCart" id="searchClose">
                 <img src="img/close.png" alt="" />
               </button>
             </div>
-            <div class="mobile_menu_items">
-              <ul>
-                <li>
-                  <a menu-open="AllFabrics" href="JavaScript:void(0)"
-                    >All Fabrics
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                </li>
-                <li>
-                  <a menu-open="FabricEnduse" href="JavaScript:void(0)"
-                    >Fabric End-use
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                </li>
-                <li>
-                  <a menu-open="IndustrialFabrics" href="JavaScript:void(0)"
-                    >Industrial Fabrics
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                </li>
-                <li>
-                  <a menu-open="Characteristics" href="JavaScript:void(0)"
-                    >Characteristics
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                </li>
-                <li>
-                  <a menu-open="AboutUs" href="JavaScript:void(0)"
-                    >About Us
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                </li>
-                <li>
-                  <a menu-open="OurServices" href="JavaScript:void(0)"
-                    >Our Services
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                </li>
-              </ul>
+            <div class="shoppingwrapper">
+              <div class="shoppingitemone d-flex justify-content-between">
+                <div class="shopingitem_main_left d-flex align-items-center">
+                  <div class="shoppingitemone_left">
+                    <img src="img/khata.png" alt="" />
+                  </div>
+                  <div class="shoppingitemone_right">
+                    <p>Cotton Puff <span>60"</span></p>
+                    <div class="masure d-flex">
+                      <div class="mesureleft">
+                        <span></span>
+                      </div>
+                      <div class="mesureRight">
+                        <p>Leaf Green</p>
+                        <p>x2 Yards</p>
+                      </div>
+                    </div>
+                    <div class="action_button">
+                      <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopingitem_main_right">
+                  <p>120.00</p>
+                </div>
+              </div>
+              <div class="shoppingitemone d-flex justify-content-between">
+                <div class="shopingitem_main_left d-flex align-items-center">
+                  <div class="shoppingitemone_left">
+                    <img src="img/khata.png" alt="" />
+                  </div>
+                  <div class="shoppingitemone_right">
+                    <p>Cotton Puff <span>60"</span></p>
+                    <div class="masure d-flex">
+                      <div class="mesureleft">
+                        <span></span>
+                      </div>
+                      <div class="mesureRight">
+                        <p>Leaf Green</p>
+                        <p>x2 Yards</p>
+                      </div>
+                    </div>
+                    <div class="action_button">
+                      <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopingitem_main_right">
+                  <p>120.00</p>
+                </div>
+              </div>
+              <div class="shoppingitemone d-flex justify-content-between">
+                <div class="shopingitem_main_left d-flex align-items-center">
+                  <div class="shoppingitemone_left">
+                    <img src="img/khata.png" alt="" />
+                  </div>
+                  <div class="shoppingitemone_right">
+                    <p>Cotton Puff <span>60"</span></p>
+                    <div class="masure d-flex">
+                      <div class="mesureleft">
+                        <span></span>
+                      </div>
+                      <div class="mesureRight">
+                        <p>Leaf Green</p>
+                        <p>x2 Yards</p>
+                      </div>
+                    </div>
+                    <div class="action_button">
+                      <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopingitem_main_right">
+                  <p>120.00</p>
+                </div>
+              </div>
+              <div class="shoppingitemone d-flex justify-content-between">
+                <div class="shopingitem_main_left d-flex align-items-center">
+                  <div class="shoppingitemone_left">
+                    <img src="img/khata.png" alt="" />
+                  </div>
+                  <div class="shoppingitemone_right">
+                    <p>Cotton Puff <span>60"</span></p>
+                    <div class="masure d-flex">
+                      <div class="mesureleft">
+                        <span></span>
+                      </div>
+                      <div class="mesureRight">
+                        <p>Leaf Green</p>
+                        <p>x2 Yards</p>
+                      </div>
+                    </div>
+                    <div class="action_button">
+                      <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopingitem_main_right">
+                  <p>120.00</p>
+                </div>
+              </div>
+              <div class="shoppingitemone d-flex justify-content-between">
+                <div class="shopingitem_main_left d-flex align-items-center">
+                  <div class="shoppingitemone_left">
+                    <img src="img/khata.png" alt="" />
+                  </div>
+                  <div class="shoppingitemone_right">
+                    <p>Cotton Puff <span>60"</span></p>
+                    <div class="masure d-flex">
+                      <div class="mesureleft">
+                        <span></span>
+                      </div>
+                      <div class="mesureRight">
+                        <p>Leaf Green</p>
+                        <p>x2 Yards</p>
+                      </div>
+                    </div>
+                    <div class="action_button">
+                      <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopingitem_main_right">
+                  <p>120.00</p>
+                </div>
+              </div>
+              <div class="shoppingitemone d-flex justify-content-between">
+                <div class="shopingitem_main_left d-flex align-items-center">
+                  <div class="shoppingitemone_left">
+                    <img src="img/khata.png" alt="" />
+                  </div>
+                  <div class="shoppingitemone_right">
+                    <p>Cotton Puff <span>60"</span></p>
+                    <div class="masure d-flex">
+                      <div class="mesureleft">
+                        <span></span>
+                      </div>
+                      <div class="mesureRight">
+                        <p>Leaf Green</p>
+                        <p>x2 Yards</p>
+                      </div>
+                    </div>
+                    <div class="action_button">
+                      <ul>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Remove</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopingitem_main_right">
+                  <p>120.00</p>
+                </div>
+              </div>
             </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+            <div class="couponcode">
+              <div
+                class="couponbox d-flex align-items-center justify-content-between"
+              >
+                <div class="couponbox_left">
+                  <p>Discount Coupon</p>
+                </div>
+                <div class="couponbox_Right d-flex align-items-center">
+                  <input
+                    autocomplete="off"
+                    id="disInput"
+                    placeholder="Discount Code"
+                    type="text"
+                  />
+                  <button id="apply">Apply</button>
+                </div>
+              </div>
+              <div class="pricetable">
+                <div class="totalpc">
+                  <h4>Total Price</h4>
+                  <span>360.00</span>
+                </div>
+                <div class="afterdiscount"></div>
+              </div>
+              <div class="pricePara mt-2">
+                <p class="text-end">
+                  Price does not include tax and delivery charges.
+                </p>
+              </div>
             </div>
           </div>
+          <div class="orderButton">
+            <ul>
+              <li><a href="#">Request Quotation</a></li>
+              <li><a href="#">Process Order</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+        <!-- small part menu end -->
 
-      <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="AllFabrics">
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div
-              class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
-            >
-              <p closeItem="AllFabrics" id="close_mobile_menu">
-                <span><i class="fa-solid fa-angle-left"></i></span> Back
-              </p>
-              <button id="allMenuClose">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="mobile_sub_menu_items">
-              <ul>
-                <li><a href="#">Cotton</a></li>
-                <li><a href="#">Polyester</a></li>
-                <li><a href="#">Natural Fibers</a></li>
-                <li><a href="#">Rayon</a></li>
-                <li><a href="#">Satin</a></li>
-                <li><a href="#">Recycle</a></li>
-              </ul>
-            </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+        <!-- responsive_menu part start -->
+        <div class="mobile_menu" id="mobile_main_menu">
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div class="mobile_menu_heading text-end">
+                <button id="close_mobile_menu">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_menu_items">
+                <ul>
+                  <li>
+                    <a menu-open="AllFabrics" href="JavaScript:void(0)"
+                      >All Fabrics
+                      <span><i class="fa-solid fa-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a menu-open="FabricEnduse" href="JavaScript:void(0)"
+                      >Fabric End-use
+                      <span><i class="fa-solid fa-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a menu-open="IndustrialFabrics" href="JavaScript:void(0)"
+                      >Industrial Fabrics
+                      <span><i class="fa-solid fa-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a menu-open="Characteristics" href="JavaScript:void(0)"
+                      >Characteristics
+                      <span><i class="fa-solid fa-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a menu-open="AboutUs" href="JavaScript:void(0)"
+                      >About Us
+                      <span><i class="fa-solid fa-chevron-right"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a menu-open="OurServices" href="JavaScript:void(0)"
+                      >Our Services
+                      <span><i class="fa-solid fa-chevron-right"></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="FabricEnduse">
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div
-              class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
-            >
-              <p closeItem="FabricEnduse" id="close_mobile_menu">
-                <span><i class="fa-solid fa-angle-left"></i></span> Back
-              </p>
-              <button id="allMenuClose">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="mobile_sub_menu_items">
-              <ul>
-                <li><a href="#">FabricEnduse</a></li>
-                <li><a href="#">FabricEnduse</a></li>
-                <li><a href="#">FabricEnduse Fibers</a></li>
-                <li><a href="#">FabricEnduse</a></li>
-                <li><a href="#">FabricEnduse</a></li>
-                <li><a href="#">FabricEnduse</a></li>
-              </ul>
-            </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+        <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="AllFabrics">
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div
+                class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
+              >
+                <p closeItem="AllFabrics" id="close_mobile_menu">
+                  <span><i class="fa-solid fa-angle-left"></i></span> Back
+                </p>
+                <button id="allMenuClose">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_sub_menu_items">
+                <ul>
+                  <li><a href="#">Cotton</a></li>
+                  <li><a href="#">Polyester</a></li>
+                  <li><a href="#">Natural Fibers</a></li>
+                  <li><a href="#">Rayon</a></li>
+                  <li><a href="#">Satin</a></li>
+                  <li><a href="#">Recycle</a></li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="mobile_menu"
-        id="mobile_sub_menu"
-        menu-tigger="IndustrialFabrics"
-      >
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div
-              class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
-            >
-              <p closeItem="IndustrialFabrics" id="close_mobile_menu">
-                <span><i class="fa-solid fa-angle-left"></i></span> Back
-              </p>
-              <button id="allMenuClose">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="mobile_sub_menu_items">
-              <ul>
-                <li><a href="#">Industrial Fabrics</a></li>
-                <li><a href="#">Industrial Fabrics</a></li>
-                <li><a href="#">Industrial Fabrics Fibers</a></li>
-                <li><a href="#">Industrial Fabrics</a></li>
-                <li><a href="#">Industrial Fabrics</a></li>
-                <li><a href="#">Industrial Fabrics</a></li>
-              </ul>
-            </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+        <div
+          class="mobile_menu"
+          id="mobile_sub_menu"
+          menu-tigger="FabricEnduse"
+        >
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div
+                class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
+              >
+                <p closeItem="FabricEnduse" id="close_mobile_menu">
+                  <span><i class="fa-solid fa-angle-left"></i></span> Back
+                </p>
+                <button id="allMenuClose">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_sub_menu_items">
+                <ul>
+                  <li><a href="#">FabricEnduse</a></li>
+                  <li><a href="#">FabricEnduse</a></li>
+                  <li><a href="#">FabricEnduse Fibers</a></li>
+                  <li><a href="#">FabricEnduse</a></li>
+                  <li><a href="#">FabricEnduse</a></li>
+                  <li><a href="#">FabricEnduse</a></li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="mobile_menu"
-        id="mobile_sub_menu"
-        menu-tigger="Characteristics"
-      >
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div
-              class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
-            >
-              <p closeItem="Characteristics" id="close_mobile_menu">
-                <span><i class="fa-solid fa-angle-left"></i></span> Back
-              </p>
-              <button id="allMenuClose">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="mobile_sub_menu_items">
-              <ul>
-                <li><a href="#">Characte ristics</a></li>
-                <li><a href="#">Characte ristics</a></li>
-                <li><a href="#">Characte ristics Fibers</a></li>
-                <li><a href="#">Characte ristics</a></li>
-                <li><a href="#">Characte ristics</a></li>
-                <li><a href="#">Characte ristics</a></li>
-              </ul>
-            </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+        <div
+          class="mobile_menu"
+          id="mobile_sub_menu"
+          menu-tigger="IndustrialFabrics"
+        >
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div
+                class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
+              >
+                <p closeItem="IndustrialFabrics" id="close_mobile_menu">
+                  <span><i class="fa-solid fa-angle-left"></i></span> Back
+                </p>
+                <button id="allMenuClose">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_sub_menu_items">
+                <ul>
+                  <li><a href="#">Industrial Fabrics</a></li>
+                  <li><a href="#">Industrial Fabrics</a></li>
+                  <li><a href="#">Industrial Fabrics Fibers</a></li>
+                  <li><a href="#">Industrial Fabrics</a></li>
+                  <li><a href="#">Industrial Fabrics</a></li>
+                  <li><a href="#">Industrial Fabrics</a></li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="AboutUs">
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div
-              class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
-            >
-              <p closeItem="AboutUs" id="close_mobile_menu">
-                <span><i class="fa-solid fa-angle-left"></i></span> Back
-              </p>
-              <button id="allMenuClose">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="mobile_sub_menu_items">
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">About Us </a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">About Us</a></li>
-              </ul>
-            </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+        <div
+          class="mobile_menu"
+          id="mobile_sub_menu"
+          menu-tigger="Characteristics"
+        >
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div
+                class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
+              >
+                <p closeItem="Characteristics" id="close_mobile_menu">
+                  <span><i class="fa-solid fa-angle-left"></i></span> Back
+                </p>
+                <button id="allMenuClose">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_sub_menu_items">
+                <ul>
+                  <li><a href="#">Characte ristics</a></li>
+                  <li><a href="#">Characte ristics</a></li>
+                  <li><a href="#">Characte ristics Fibers</a></li>
+                  <li><a href="#">Characte ristics</a></li>
+                  <li><a href="#">Characte ristics</a></li>
+                  <li><a href="#">Characte ristics</a></li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="OurServices">
-        <div class="containerx">
-          <div class="mobile_menu-wrapper">
-            <div
-              class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
-            >
-              <p closeItem="OurServices" id="close_mobile_menu">
-                <span><i class="fa-solid fa-angle-left"></i></span> Back
-              </p>
-              <button id="allMenuClose">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="mobile_sub_menu_items">
-              <ul>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Our Services </a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Our Services</a></li>
-              </ul>
-            </div>
-            <div class="phone_contact">
-              <ul>
-                <li>
-                  <a
-                    href="tel:+66 (0)2 863
-                  1260"
-                    ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2 863
-                    1260</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:sales@bulliontex.com"
-                    ><span><i class="fa-solid fa-envelope"></i></span
-                    >sales@bulliontex.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social_items">
-              <ul>
-                <li>
-                  <a href="#"><img src="img/si1.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si2.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si3.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/si4.png" alt="" /></a>
-                </li>
-              </ul>
+        <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="AboutUs">
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div
+                class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
+              >
+                <p closeItem="AboutUs" id="close_mobile_menu">
+                  <span><i class="fa-solid fa-angle-left"></i></span> Back
+                </p>
+                <button id="allMenuClose">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_sub_menu_items">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">About Us </a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- responsive_menu part start -->
-    </header>
+
+        <div class="mobile_menu" id="mobile_sub_menu" menu-tigger="OurServices">
+          <div class="containerx">
+            <div class="mobile_menu-wrapper">
+              <div
+                class="mobile_menu_heading text-end d-flex align-items-center justify-content-between"
+              >
+                <p closeItem="OurServices" id="close_mobile_menu">
+                  <span><i class="fa-solid fa-angle-left"></i></span> Back
+                </p>
+                <button id="allMenuClose">
+                  <img src="img/close.png" alt="" />
+                </button>
+              </div>
+              <div class="mobile_sub_menu_items">
+                <ul>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Our Services </a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Our Services</a></li>
+                </ul>
+              </div>
+              <div class="phone_contact">
+                <ul>
+                  <li>
+                    <a
+                      href="tel:+66 (0)2 863
+                    1260"
+                      ><span><i class="fa-solid fa-phone"></i></span>+66 (0)2
+                      863 1260</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:sales@bulliontex.com"
+                      ><span><i class="fa-solid fa-envelope"></i></span
+                      >sales@bulliontex.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social_items">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/si1.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si2.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si3.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/si4.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- responsive_menu part start -->
+      </header>
+    </section>
     <!-- header area end -->
 
     <!-- bottom_menu_mobile area start -->
@@ -1810,7 +1836,7 @@
           <div class="p1bestseller_slider">
             <div class="owl-carousel products-slider owl-theme">
               <div class="item">
-                <div class="best_slider_inner">
+                <div class="best_slider_inner content_wrapper">
                   <img id="bsImg" src="img/bs1.png" alt="" />
                   <div class="slider_inner_content">
                     <div class="best_slider_inner_heading">
@@ -1859,7 +1885,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="best_slider_inner">
+                <div class="best_slider_inner content_wrapper">
                   <img id="bsImg" src="img/bs1.png" alt="" />
                   <div class="slider_inner_content">
                     <div class="best_slider_inner_heading">
@@ -1908,7 +1934,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="best_slider_inner">
+                <div class="best_slider_inner content_wrapper">
                   <img id="bsImg" src="img/bs1.png" alt="" />
                   <div class="slider_inner_content">
                     <div class="best_slider_inner_heading">
@@ -1957,7 +1983,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="best_slider_inner">
+                <div class="best_slider_inner content_wrapper">
                   <img id="bsImg" src="img/bs1.png" alt="" />
                   <div class="slider_inner_content">
                     <div class="best_slider_inner_heading">
@@ -2006,7 +2032,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="best_slider_inner">
+                <div class="best_slider_inner content_wrapper">
                   <img id="bsImg" src="img/bs1.png" alt="" />
                   <div class="slider_inner_content">
                     <div class="best_slider_inner_heading">
@@ -2055,7 +2081,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="best_slider_inner">
+                <div class="best_slider_inner content_wrapper">
                   <img id="bsImg" src="img/bs1.png" alt="" />
                   <div class="slider_inner_content">
                     <div class="best_slider_inner_heading">
@@ -2114,6 +2140,540 @@
     </section>
     <!-- p1bestseller area end -->
 
+    <!-- p1pattrn area start -->
+    <section id="p1pattrn">
+      <div class="p1pattrn_one">
+        <div class="p1fabirc_one_left p1fabric_two_right">
+          <img class="d-none d-md-block" src="img/gr1.png" alt="" />
+          <img class="d-block d-md-none" src="img/grm1.png" alt="" />
+          <div class="p1fabric_one_text">
+            <div class="p1fabric_one_text_left">
+              <h2>Patterns</h2>
+              <p>Trending Patterns</p>
+            </div>
+            <div class="p1fabric_one_text_right">
+              <a href="#"
+                >View All
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="p1fabric_two_left">
+          <div class="p1fabric_two_left_content">
+            <img src="img/sh1.png" alt="" />
+            <p class="text-white">
+              Assorted patterns for all your creative ideas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p1pattrn_one p1pattrn_two">
+        <div class="p1fabric_two_left">
+          <div class="p1fabric_two_left_content">
+            <img src="img/sh2.png" alt="" />
+            <p class="text-white">The season is just around the corner.</p>
+          </div>
+        </div>
+        <div class="p1fabirc_one_left p1fabric_two_right">
+          <img class="d-none d-md-block" src="img/gr2.png" alt="" />
+          <img class="d-block d-md-none" src="img/grm2.png" alt="" />
+          <div class="p1fabric_one_text">
+            <div class="p1fabric_one_text_left">
+              <h2>Seasonal Fabrics</h2>
+              <p>Don’t miss out this season</p>
+            </div>
+            <div class="p1fabric_one_text_right">
+              <a href="#"
+                >View All
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1pattrn area end -->
+
+    <!-- p1industry area start -->
+    <section id="p1industry">
+      <div class="container">
+        <div class="p1industry_wrapper">
+          <h2 class="text-center">Fabrics for your industry</h2>
+        </div>
+        <div class="p1industry_block">
+          <div class="menu_mega_three">
+            <div class="menu_mega_three_block">
+              <img src="img/fab1.png" alt="" />
+              <p>
+                Interior <br />
+                &amp; Furnitures
+              </p>
+            </div>
+            <div class="menu_mega_three_block">
+              <img src="img/fab2.png" alt="" />
+              <p>
+                Automotives <br />
+                &amp; Airlines
+              </p>
+            </div>
+            <div class="menu_mega_three_block">
+              <img src="img/fab3.png" alt="" />
+              <p>Medical Graded</p>
+            </div>
+            <div class="menu_mega_three_block">
+              <img src="img/fab4.png" alt="" />
+              <p>
+                Art, Crafts <br />
+                Entertainment
+              </p>
+            </div>
+            <div class="menu_mega_three_block">
+              <img src="img/fab5.png" alt="" />
+              <p>
+                Uniform &amp; Service <br />
+                Industry
+              </p>
+            </div>
+            <div class="menu_mega_three_block">
+              <img src="img/fab6.png" alt="" />
+              <p>
+                Agriculture &amp; <br />
+                Manufacturing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1industry area end -->
+
+    <!-- p1bull area start -->
+    <section id="p1bull">
+      <div class="container">
+        <div class="p1bull_wrapper">
+          <h2>Bulliontex</h2>
+          <h6>
+            is a manufacturer and distributor of fashion fabric rolls, both
+            retail and wholesale. Focus on textile innovation to achieve the
+            most modern fabric styles.
+          </h6>
+          <p>
+            We pay attention to every detail and pay attention to every step.
+            This makes us gain attention and trust from many customers. So rest
+            assured that you will receive quality products at reasonable prices.
+            And we are always ready to develop according to the needs of
+            customers, both retail and wholesale fashion. Focus on textile
+            innovation to achieve the most modern fabric styles.
+          </p>
+          <a href="#"
+            >Read Our Story
+            <span><i class="fa-solid fa-arrow-right-long"></i></span
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- p1bull area end -->
+
+    <!-- p1logo area start -->
+    <section id="p1logo">
+      <div class="container">
+        <div class="p1logo_slider">
+          <div class="slick marquee">
+            <div class="slick-slide">
+              <div class="inner">
+                <img width="250" src="img/lg1.png" />
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="inner">
+                <img width="200" src="img/lg2.png" />
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="inner">
+                <img width="200" src="img/lg3.png" />
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="inner">
+                <img width="250" src="img/lg4.png" />
+              </div>
+            </div>
+            <div class="slick-slide">
+              <div class="inner">
+                <img width="120" src="img/lg5.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1logo area end -->
+
+    <!-- p1service area start -->
+    <section id="p1service">
+      <div class="container">
+        <div class="p1service_wrapper">
+          <h2 class="headingUp text-center">Full-service Fabric Solutions</h2>
+          <div class="service_block">
+            <div class="service_block_one">
+              <div class="service_block_one_heading">
+                <div class="service_block_one_left">
+                  <div class="service_block_one_left_img">
+                    <img src="img/sb1.png" alt="" />
+                  </div>
+                  <div class="service_block_one_left_heading">
+                    <h3>
+                      Fabric <br />
+                      Showroom & <br />
+                      Constultations
+                    </h3>
+                  </div>
+                </div>
+                <div class="service_block_one_right d-block d-md-none">
+                  <span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </div>
+              <div class="service_block_one_para">
+                <p>
+                  We have a showroom for everyone to experience the beauty of
+                  the fabric. imported from abroad and produced in Thailand
+                  Ready to have a fabric expert to give advice.
+                </p>
+              </div>
+            </div>
+            <div class="service_block_one">
+              <div class="service_block_one_heading">
+                <div class="service_block_one_left">
+                  <div class="service_block_one_left_img">
+                    <img src="img/sb2.png" alt="" />
+                  </div>
+                  <div class="service_block_one_left_heading">
+                    <h3>Fabric Sourcing</h3>
+                  </div>
+                </div>
+                <div class="service_block_one_right d-block d-md-none">
+                  <span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </div>
+              <div class="service_block_one_para">
+                <p>
+                  We have a showroom for everyone to experience the beauty of
+                  the fabric. imported from abroad and produced in Thailand
+                  Ready to have a fabric expert to give advice.
+                </p>
+              </div>
+            </div>
+            <div class="service_block_one service_block_two">
+              <div class="service_block_one_heading">
+                <div class="service_block_one_left">
+                  <div class="service_block_one_left_img">
+                    <img src="img/sb3.png" alt="" />
+                  </div>
+                  <div class="service_block_one_left_heading">
+                    <h3>
+                      Made to Order <br />
+                      & Digital Print
+                    </h3>
+                  </div>
+                </div>
+                <div class="service_block_one_right d-block d-md-none">
+                  <span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </div>
+              <div class="service_block_one_para">
+                <p>
+                  We have a showroom for everyone to experience the beauty of
+                  the fabric. imported from abroad and produced in Thailand
+                  Ready to have a fabric expert to give advice.
+                </p>
+              </div>
+            </div>
+            <div class="service_block_one">
+              <div class="service_block_one_heading">
+                <div class="service_block_one_left">
+                  <div class="service_block_one_left_img">
+                    <img src="img/sb4.png" alt="" />
+                  </div>
+                  <div class="service_block_one_left_heading">
+                    <h3>Warping & Sizing</h3>
+                  </div>
+                </div>
+                <div class="service_block_one_right d-block d-md-none">
+                  <span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </div>
+              <div class="service_block_one_para">
+                <p>
+                  We have a showroom for everyone to experience the beauty of
+                  the fabric. imported from abroad and produced in Thailand
+                  Ready to have a fabric expert to give advice.
+                </p>
+              </div>
+            </div>
+            <div class="service_block_one">
+              <div class="service_block_one_heading">
+                <div class="service_block_one_left">
+                  <div class="service_block_one_left_img">
+                    <img src="img/sb5.png" alt="" />
+                  </div>
+                  <div class="service_block_one_left_heading">
+                    <h3>Fabric Calculator</h3>
+                  </div>
+                </div>
+                <div class="service_block_one_right d-block d-md-none">
+                  <span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </div>
+              <div class="service_block_one_para">
+                <p>
+                  We have a showroom for everyone to experience the beauty of
+                  the fabric. imported from abroad and produced in Thailand
+                  Ready to have a fabric expert to give advice.
+                </p>
+              </div>
+            </div>
+            <div class="service_block_one service_block_two">
+              <div class="service_block_one_heading">
+                <div class="service_block_one_left">
+                  <div class="service_block_one_left_img">
+                    <img src="img/sb6.png" alt="" />
+                  </div>
+                  <div class="service_block_one_left_heading">
+                    <h3>Kappra Café</h3>
+                  </div>
+                </div>
+                <div class="service_block_one_right d-block d-md-none">
+                  <span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+              </div>
+              <div class="service_block_one_para">
+                <p>
+                  We have a showroom for everyone to experience the beauty of
+                  the fabric. imported from abroad and produced in Thailand
+                  Ready to have a fabric expert to give advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1service area end -->
+
+    <!-- p1oreder area start -->
+    <section id="p1order">
+      <div class="container">
+        <div class="p1order-wrap">
+          <h2 class="headingUp">How to Order?</h2>
+          <div class="p1order-wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="p1order_one">
+                  <div class="p1order_one_img">
+                    <img src="img/or1.png" alt="" />
+                  </div>
+                  <div class="p1order_content">
+                    <h4>Choose your fabrics</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla mollis ipsum ultricies leo finibus ultrices. Mauris
+                      pellentesque risus at tortor ornare varius.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="p1order_one">
+                  <div class="p1order_one_img">
+                    <img src="img/or2.png" alt="" />
+                  </div>
+                  <div class="p1order_content">
+                    <h4>Purchasing Channels</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla mollis ipsum ultricies leo finibus ultrices. Mauris
+                      pellentesque risus at tortor ornare varius.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="p1order_one">
+                  <div class="p1order_one_img">
+                    <img src="img/or3.png" alt="" />
+                  </div>
+                  <div class="p1order_content">
+                    <h4>Make Payments</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla mollis ipsum ultricies leo finibus ultrices. Mauris
+                      pellentesque risus at tortor ornare varius.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="p1order_one p1order_one_last">
+                  <div class="p1order_one_img">
+                    <img src="img/or4.png" alt="" />
+                  </div>
+                  <div class="p1order_content">
+                    <h4>Delivery</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla mollis ipsum ultricies leo finibus ultrices. Mauris
+                      pellentesque risus at tortor ornare varius.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p1order_para d-none d-md-block">
+            <p>
+              Return & Exchange: defective products that have been faulty caused
+              by the company can be replaced free of charge,
+            </p>
+            <p>
+              provided the product is still in its orinigal condition. The
+              prodcut must not be cut or sewned.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1oreder area end -->
+
+    <!-- p1explore area start -->
+    <section id="p1explore">
+      <div class="p1explore_wrapper text-white">
+        <h5>Explore out</h5>
+        <h2>sample books</h2>
+        <a href="#">View all Sample Books</a>
+      </div>
+    </section>
+    <!-- p1explore area end -->
+
+    <!-- p1touch area start -->
+    <section id="p1touch">
+      <div class="container">
+        <div class="p1touch_wrapper">
+          <div class="row">
+            <div class="col-lg-4 order-2 order-lg-1">
+              <div class="p1touch_left">
+                <h2 class="headingUp">Get in Touch</h2>
+                <div class="p1touch_business">
+                  <span>Business Hours</span>
+                  <p>Monday - Friday 9.00 - 18.00</p>
+                  <p>Saturday - Sunday 9.00 - 17.00</p>
+                </div>
+                <div class="p1touch_mail">
+                  <span>Email</span>
+                  <a href="mailto:sales@bulliontex.com">sales@bulliontex.com</a>
+                </div>
+                <div class="p1touch_tele">
+                  <span>Telephone</span>
+                  <a href="tel:+66 (0)2 863 1260">+66 (0)2 863 1260</a>
+                </div>
+                <div class="p1sto">
+                  <span>Store Location</span>
+                  <p>Bulliontex Co., Ltd.</p>
+                  <p>437/21-22 Tha Dindaeng Rd</p>
+                  <p>Somdejchaophraya</p>
+                  <p>Klongsan Bangkok 10600</p>
+                </div>
+                <div class="p1link">
+                  <a href="#"
+                    >Get Direction
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 order-1 order-lg-2">
+              <div class="p1map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.9254526411861!2d100.50384162819574!3d13.736494604597379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299285a22dca3%3A0x737ebf4b1d06c811!2sYokYor!5e0!3m2!1sen!2sbd!4v1695933792293!5m2!1sen!2sbd"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1touch area end -->
+
+    <!-- p1review area start -->
+    <section id="p1review">
+      <div class="container">
+        <div class="review_wrapper">
+          <div class="review_heading">
+            <h2 class="headingUp">What do our customers say about us?</h2>
+            <a class="d-none d-md-inline-block" href="#"
+              >Read All Reviews
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+          <div class="review_block">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="review_block_one text-center">
+                  <p>
+                    “We are more than happy with the fabrics and the passion
+                    your team has provided. I would surely comeback for more
+                    fabrics.”
+                  </p>
+                  <div class="review_block_name">
+                    <h5>Patricia</h5>
+                    <p>Bangkok 25 Aug 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="review_block_one text-center d-none d-md-block">
+                  <p>
+                    “We are more than happy with the fabrics and the passion
+                    your team has provided. I would surely comeback for more
+                    fabrics.”
+                  </p>
+                  <div class="review_block_name">
+                    <h5>Patricia</h5>
+                    <p>Bangkok 25 Aug 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="review_block_one text-center d-none d-md-block">
+                  <p>
+                    “We are more than happy with the fabrics and the passion
+                    your team has provided. I would surely comeback for more
+                    fabrics.”
+                  </p>
+                  <div class="review_block_name">
+                    <h5>Patricia</h5>
+                    <p>Bangkok 25 Aug 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seereview d-block d-md-none text-center">
+            <a href="#"
+              >Read All Reviews
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1review area end -->
+
     <!-- Main jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
@@ -2125,6 +2685,7 @@
 
     <!-- Include owl-carousel -->
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 
     <!-- Custom js -->
     <script src="js/app.js"></script>
@@ -2134,15 +2695,33 @@
     <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
 
     <script>
-      // code for select color variant
-      const variButton = document.querySelectorAll(".color_vari button");
-      const bsImg = document.getElementById("bsImg");
-      const changeImg = variButton.forEach((button) => {
-        button.addEventListener("click", () => {
-          variButton.forEach((b) => b.classList.remove("bsactive"));
-          button.classList.add("bsactive");
-          const bsAttr = button.getAttribute("imgsrc");
-          bsImg.src = bsAttr;
+      // code for changing color varient in owl carusol
+      const containers = document.querySelectorAll(".content_wrapper");
+      containers.forEach((container) => {
+        const buttons = container.querySelectorAll(".color_vari button");
+        const imgHolder = container.querySelector("#bsImg");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            buttons.forEach((b) => b.classList.remove("bsactive"));
+            button.classList.add("bsactive");
+            const getImg = button.getAttribute("imgsrc");
+            imgHolder.src = getImg;
+          });
+        });
+      });
+
+      // code for faq
+      const faqMain = document.querySelectorAll(".service_block_one");
+      faqMain.forEach((item) => {
+        const heading = item.querySelector(".service_block_one_heading");
+        heading.addEventListener("click", () => {
+          item.classList.toggle("faqActive");
+          faqMain.forEach((mainItem) => {
+            if (mainItem !== item) {
+              mainItem.classList.remove("faqActive");
+            }
+          });
         });
       });
     </script>
