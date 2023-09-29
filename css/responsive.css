@@ -67,6 +67,26 @@ Medium Screen - Others
   .headingUp {
     font-size: 44px;
   }
+
+  .footer_one ul li a {
+    font-size: 16px;
+  }
+
+  .hour_one p {
+    font-size: 16px;
+  }
+
+  .reach_us p {
+    font-size: 16px;
+  }
+
+  .res_bottom ul li a {
+    font-size: 14px;
+  }
+
+  .res_bottom p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -142,6 +162,26 @@ Medium Screen - Others
 
   .review_block::before {
     right: -6px;
+  }
+
+  .footer_one ul li a {
+    font-size: 16px;
+  }
+
+  .hour_one p {
+    font-size: 16px;
+  }
+
+  .reach_us p {
+    font-size: 16px;
+  }
+
+  .res_bottom ul li a {
+    font-size: 14px;
+  }
+
+  .res_bottom p {
+    font-size: 14px;
   }
 }
 
@@ -313,6 +353,34 @@ Medium Screen - Others
     height: 36px;
     right: 0;
     bottom: -40px;
+  }
+
+  .footer_wrapper {
+    column-gap: 10px;
+  }
+
+  .footer_one h4 {
+    font-size: 16px;
+  }
+
+  .footer_one ul li a {
+    font-size: 14px;
+  }
+
+  .hour_one p {
+    font-size: 14px;
+  }
+
+  .reach_us p {
+    font-size: 14px;
+  }
+
+  .res_bottom ul li a {
+    font-size: 12px;
+  }
+
+  .res_bottom p {
+    font-size: 13px;
   }
 }
 
@@ -558,6 +626,10 @@ Small Screen - Tablate
     height: 36px;
     right: 0;
     bottom: -40px;
+  }
+
+  #p1review {
+    margin-bottom: 52px;
   }
 }
 
@@ -1060,6 +1132,7 @@ Small Screen - Mobile
 
   #p1review {
     padding: 30px 0px;
+    margin-bottom: 52px;
   }
 
   .review_heading {
@@ -1607,6 +1680,7 @@ Xtra Small Screen - Small Mobile
 
   #p1review {
     padding: 30px 0px;
+    margin-bottom: 52px;
   }
 
   .review_heading {
