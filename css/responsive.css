@@ -87,6 +87,98 @@ Medium Screen - Others
   .res_bottom p {
     font-size: 14px;
   }
+
+  .p2filter_left ul li {
+    font-size: 15px;
+    margin-right: 11px;
+  }
+
+  .p2filter_right ul li {
+    font-size: 14px;
+  }
+
+  .p2filter_right p {
+    font-size: 14px;
+  }
+
+  .p2filter_drop_one_wrapper {
+    gap: 14px;
+  }
+
+  #drop_three .checkmark,
+  #drop_three #check_three span {
+    width: 50px;
+    height: 50px;
+  }
+
+  .drop_four_right {
+    padding-left: 75px;
+  }
+
+  .p2_slider_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .slider_color_varient ul li button span,
+  .slider_color_varient ul li.color_link a span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 3px;
+  }
+
+  .slider_color_varient ul li.color_link a span {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -9px;
+  }
+
+  .sf_right p {
+    font-size: 15px;
+  }
+
+  .slider_inner_content {
+    padding: 0;
+    padding-top: 15px;
+  }
+
+  .p2_slider_wrapper .p2_slider_one {
+    padding: 10px;
+  }
+
+  .best_slider_inner_heading_left h5 {
+    font-size: 18px;
+  }
+
+  .best_slider_inner_heading_right p {
+    font-size: 18px;
+  }
+
+  .best_slider_inner_heading_left p {
+    font-size: 15px;
+  }
+
+  .p2_hero_left {
+    max-width: 500px;
+    padding: 100px 0px;
+  }
+
+  .p2_hero_right {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .p2_hero_left h2 {
+    font-size: 66px;
+    margin-bottom: 20px;
+  }
+
+  .p2_hero_left p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -182,6 +274,98 @@ Medium Screen - Others
 
   .res_bottom p {
     font-size: 14px;
+  }
+
+  .p2filter_left ul li {
+    font-size: 15px;
+    margin-right: 11px;
+  }
+
+  .p2filter_right ul li {
+    font-size: 14px;
+  }
+
+  .p2filter_right p {
+    font-size: 14px;
+  }
+
+  .p2filter_drop_one_wrapper {
+    gap: 14px;
+  }
+
+  #drop_three .checkmark,
+  #drop_three #check_three span {
+    width: 50px;
+    height: 50px;
+  }
+
+  .drop_four_right {
+    padding-left: 75px;
+  }
+
+  .p2_slider_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .slider_color_varient ul li button span,
+  .slider_color_varient ul li.color_link a span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 3px;
+  }
+
+  .slider_color_varient ul li.color_link a span {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -9px;
+  }
+
+  .sf_right p {
+    font-size: 15px;
+  }
+
+  .slider_inner_content {
+    padding: 0;
+    padding-top: 15px;
+  }
+
+  .p2_slider_wrapper .p2_slider_one {
+    padding: 10px;
+  }
+
+  .best_slider_inner_heading_left h5 {
+    font-size: 18px;
+  }
+
+  .best_slider_inner_heading_right p {
+    font-size: 18px;
+  }
+
+  .best_slider_inner_heading_left p {
+    font-size: 15px;
+  }
+
+  .p2_hero_left {
+    max-width: 515px;
+    padding: 70px 0px;
+  }
+
+  .p2_hero_right {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .p2_hero_left h2 {
+    font-size: 66px;
+    margin-bottom: 20px;
+  }
+
+  .p2_hero_left p {
+    font-size: 16px;
   }
 }
 
@@ -381,6 +565,98 @@ Medium Screen - Others
 
   .res_bottom p {
     font-size: 13px;
+  }
+
+  .p2filter_left ul li {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+
+  .p2filter_right ul li {
+    font-size: 14px;
+  }
+
+  .p2filter_right p {
+    font-size: 14px;
+  }
+
+  .p2filter_drop_one_wrapper {
+    gap: 14px;
+  }
+
+  #drop_three .checkmark,
+  #drop_three #check_three span {
+    width: 50px;
+    height: 50px;
+  }
+
+  .drop_four_right {
+    padding-left: 75px;
+  }
+
+  .p2_slider_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .slider_color_varient ul li button span,
+  .slider_color_varient ul li.color_link a span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 3px;
+  }
+
+  .slider_color_varient ul li.color_link a span {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -9px;
+  }
+
+  .sf_right p {
+    font-size: 15px;
+  }
+
+  .slider_inner_content {
+    padding: 0;
+    padding-top: 15px;
+  }
+
+  .p2_slider_wrapper .p2_slider_one {
+    padding: 10px;
+  }
+
+  .best_slider_inner_heading_left h5 {
+    font-size: 18px;
+  }
+
+  .best_slider_inner_heading_right p {
+    font-size: 18px;
+  }
+
+  .best_slider_inner_heading_left p {
+    font-size: 15px;
+  }
+
+  .p2_hero_left {
+    max-width: 400px;
+    padding: 50px 0px;
+  }
+
+  .p2_hero_right {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .p2_hero_left h2 {
+    font-size: 66px;
+    margin-bottom: 20px;
+  }
+
+  .p2_hero_left p {
+    font-size: 16px;
   }
 }
 
@@ -630,6 +906,81 @@ Small Screen - Tablate
 
   #p1review {
     margin-bottom: 52px;
+  }
+
+  .p2_hero_right {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .p2_hero_left {
+    max-width: 100%;
+    padding: 35px 15px;
+  }
+
+  .p2_hero_left h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .p2_hero_left p {
+    font-size: 14px;
+  }
+
+  .p2slider_wrapper {
+    border: 0;
+  }
+
+  .p2_slider_wrapper .p2_slider_one {
+    border: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .p2_slider_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .p2loader {
+    display: none;
+  }
+
+  #p2slider {
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .addui-slider .addui-slider-track .addui-slider-handle::after {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+  }
+
+  .addui-slider
+    .addui-slider-track
+    .addui-slider-handle
+    .addui-slider-value
+    span {
+    bottom: 23px;
+    font-size: 14px !important;
+  }
+
+  .rangeValue p {
+    font-size: 14px;
+    margin-left: -9px;
+  }
+
+  .rangeValue p#max {
+    margin-right: -15px;
+  }
+
+  .drop_four_left {
+    padding: 0px 30px;
+  }
+
+  .rangeValue {
+    margin-top: -10px;
   }
 }
 
@@ -1173,6 +1524,81 @@ Small Screen - Mobile
     height: 42px;
     right: 0px;
     bottom: -68px;
+  }
+
+  .p2_hero_right {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .p2_hero_left {
+    max-width: 100%;
+    padding: 35px 15px;
+  }
+
+  .p2_hero_left h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .p2_hero_left p {
+    font-size: 14px;
+  }
+
+  .p2slider_wrapper {
+    border: 0;
+  }
+
+  .p2_slider_wrapper .p2_slider_one {
+    border: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .p2_slider_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .p2loader {
+    display: none;
+  }
+
+  #p2slider {
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .addui-slider .addui-slider-track .addui-slider-handle::after {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+  }
+
+  .addui-slider
+    .addui-slider-track
+    .addui-slider-handle
+    .addui-slider-value
+    span {
+    bottom: 23px;
+    font-size: 14px !important;
+  }
+
+  .rangeValue p {
+    font-size: 14px;
+    margin-left: -9px;
+  }
+
+  .rangeValue p#max {
+    margin-right: -15px;
+  }
+
+  .drop_four_left {
+    padding: 0px 30px;
+  }
+
+  .rangeValue {
+    margin-top: -10px;
   }
 }
 
@@ -1721,5 +2147,80 @@ Xtra Small Screen - Small Mobile
     height: 42px;
     right: 0px;
     bottom: -68px;
+  }
+
+  .p2_hero_right {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .p2_hero_left {
+    max-width: 100%;
+    padding: 35px 15px;
+  }
+
+  .p2_hero_left h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .p2_hero_left p {
+    font-size: 14px;
+  }
+
+  .p2slider_wrapper {
+    border: 0;
+  }
+
+  .p2_slider_wrapper .p2_slider_one {
+    border: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .p2_slider_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .p2loader {
+    display: none;
+  }
+
+  #p2slider {
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .addui-slider .addui-slider-track .addui-slider-handle::after {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+  }
+
+  .addui-slider
+    .addui-slider-track
+    .addui-slider-handle
+    .addui-slider-value
+    span {
+    bottom: 23px;
+    font-size: 14px !important;
+  }
+
+  .rangeValue p {
+    font-size: 14px;
+    margin-left: -9px;
+  }
+
+  .rangeValue p#max {
+    margin-right: -15px;
+  }
+
+  .drop_four_left {
+    padding: 0px 30px;
+  }
+
+  .rangeValue {
+    margin-top: -10px;
   }
 }
