@@ -1,247 +1,180 @@
-(function (factory) {
-  if (typeof define === "function" && define.amd) {
-    define(["jquery"], factory);
-  } else {
-    factory(jQuery);
-  }
-})(function ($) {
-  $.fn.zoomIt = function (options) {
-    // Default parameters
-    var defaults = {
-      enabled: 1,
-      status: 0,
-      loaded: 0,
-      img: $(this),
-      offset: [0, 0],
-      class: {
-        container: "zoomit-container",
-        loaded: "loaded",
-        img: "zoomit-zoomed",
-        ghost: "zoomit-ghost",
-      },
-      // Get image src
-      src: function () {
-        return this.img.data("zoomed");
-      },
-      // Get zoom image src
-      getSrc: function () {
-        return typeof this.src == "function" ? this.src() : this.src;
-      },
-      // Image HTML
-      imgTag: null,
-    };
-
-    // Merge options
-    options = $.extend(defaults, options);
-
-    // Execute Callback
-    options.execute = function (e) {
-      if (typeof e === "string" && typeof options[e] === "function") {
-        options[e](options);
-      }
-    };
-
-    // Get container
-    options.getContainer = function () {
-      return $('<div class="' + options.class.container + '"></div>');
-    };
-
-    // Get zoom image src
-    options.getImgSrc = function () {
-      if (options.imgTag === null) {
-        options.imgTag = $("<img />")
-          .addClass(options.class.img)
-          .attr("src", this.getSrc());
-
-        // Alt Tag
-        if (typeof options.img.attr("alt") !== "undefined") {
-          options.imgTag.attr("alt", options.img.attr("alt"));
-        }
-      }
-
-      return options.imgTag;
-    };
-
-    // Get zoomed image instance
-    options.getZoomInstance = function () {
-      return options.img.parent().find("." + options.class.img);
-    };
-
-    // Restrict a numerical value between 0 and 1
-    options.restrict = function (val) {
-      if (val > 1) {
-        val = 1;
-      } else if (val < 0) {
-        val = 0;
-      }
-
-      return val;
-    };
-
-    // Get image dimensions
-    options.getDimensions = function () {
-      // Set position
-      options.position = {
-        img: {
-          width: options.img.width(),
-          height: options.img.height(),
-          offset: options.img.offset(),
-        },
-        zoom: {
-          width: options.getZoomInstance().width(),
-          height: options.getZoomInstance().height(),
-        },
-      };
-    };
-
-    // Position zoomed image element
-    options.setPosition = function (event) {
-      // iOS Original Event (Pointer Position)
-      if (typeof event.originalEvent !== "undefined") {
-        event = event.originalEvent;
-      }
-
-      // Get image dimensions
-      if (options.loaded === 0) {
-        options.getDimensions();
-      }
-
-      // Add loaded class
-      options.img.parent().addClass(options.class.loaded);
-      options.loaded = 1;
-
-      // Percentages
-      options.position.x = options.restrict(
-        (event.pageX - options.position.img.offset.left) /
-          options.position.img.width
-      );
-      options.position.y = options.restrict(
-        (event.pageY - options.position.img.offset.top) /
-          options.position.img.height
-      );
-
-      // Offsets
-      options.position.zoom.offset = {
-        left:
-          (options.position.zoom.width - options.position.img.width) *
-          options.position.x,
-        top:
-          (options.position.zoom.height - options.position.img.height) *
-          options.position.y,
-      };
-
-      options.getZoomInstance().css({
-        transform:
-          "translate(-" +
-          options.position.zoom.offset.left +
-          "px, -" +
-          options.position.zoom.offset.top +
-          "px)",
-      });
-    };
-
-    // Show zoom
-    options.show = function (event) {
-      // Return early if image is loading
-      if (!options.enabled || (options.status === 1 && options.loaded === 0)) {
-        return;
-      }
-
-      // Set zoom status
-      options.status = 1;
-
-      // Append image
-      if (options.img.parent().find("." + options.class.img).length == 0) {
-        options.img.after(options.getImgSrc());
-
-        // Image loaded callback
-        options
-          .getZoomInstance()
-          .on("load", function () {
-            options.setPosition(event);
-          })
-          .each(function () {
-            if (this.complete) options.setPosition(event);
-          });
-      } else {
-        options.setPosition(event);
-      }
-
-      // onZoomIn
-      options.execute("onZoomIn");
-    };
-
-    // Hide zoom
-    options.hide = function () {
-      options.status = 0;
-      options.loaded = 0;
-      options.imgTag = null;
-      options.img.parent().removeClass(options.class.loaded);
-      setTimeout(function () {
-        options.getZoomInstance().remove();
-      }, 500);
-      options.getZoomInstance().remove();
-
-      // onZoomOut
-      options.execute("onZoomOut");
-    };
-
-    // Move zoom
-    options.move = function (event) {
-      if (options.status) {
-        options.show(event);
-      }
-    };
-
-    // Enable
-    options.enable = function () {
-      options.enabled = 1;
-    };
-
-    // Disable
-    options.disable = function () {
-      options.enabled = 0;
-    };
-
-    // Initialize
-    options.init = function () {
-      options.img
-        .wrap(options.getContainer())
-        .after('<div class="' + options.class.ghost + '"></div>');
-
-      // Ghost
-      options.ghost = options.img.parent().find("." + options.class.ghost);
-
-      // Mouse events
-      options.ghost
-        .on("mouseenter touchstart", function (event) {
-          options.show(event);
-        })
-        .on("mouseleave touchend", function () {
-          options.hide();
-        })
-        .on("mousemove touchmove", function (event) {
-          event.stopPropagation();
-          event.preventDefault();
-          options.move(event);
-        })
-        .on("click", function () {
-          options.execute("onClick");
-        });
-
-      // onInit
-      options.execute("onInit");
-    };
-
-    // Bind zoom data
-    options.img.data("zoom", options);
-    options.init();
+/*!
+	Zoom 1.7.21
+	license: MIT
+	http://www.jacklmoore.com/zoom
+*/
+(function (o) {
+  var t = {
+    url: !1,
+    callback: !1,
+    target: !1,
+    duration: 120,
+    on: "mouseover",
+    touch: !0,
+    onZoomIn: !1,
+    onZoomOut: !1,
+    magnify: 1,
   };
-});
-
-//apply
-$("#pic").zoomIt({
-  onClick: function () {
-    // alert("good luck");
-  },
-});
+  (o.zoom = function (t, n, e, i) {
+    var u,
+      c,
+      a,
+      r,
+      m,
+      l,
+      s,
+      f = o(t),
+      h = f.css("position"),
+      d = o(n);
+    return (
+      (t.style.position = /(absolute|fixed)/.test(h) ? h : "relative"),
+      (t.style.overflow = "hidden"),
+      (e.style.width = e.style.height = ""),
+      o(e)
+        .addClass("zoomImg")
+        .css({
+          position: "absolute",
+          top: 0,
+          left: 0,
+          opacity: 0,
+          width: e.width * i,
+          height: e.height * i,
+          border: "none",
+          maxWidth: "none",
+          maxHeight: "none",
+        })
+        .appendTo(t),
+      {
+        init: function () {
+          (c = f.outerWidth()),
+            (u = f.outerHeight()),
+            n === t
+              ? ((r = c), (a = u))
+              : ((r = d.outerWidth()), (a = d.outerHeight())),
+            (m = (e.width - c) / r),
+            (l = (e.height - u) / a),
+            (s = d.offset());
+        },
+        move: function (o) {
+          var t = o.pageX - s.left,
+            n = o.pageY - s.top;
+          (n = Math.max(Math.min(n, a), 0)),
+            (t = Math.max(Math.min(t, r), 0)),
+            (e.style.left = t * -m + "px"),
+            (e.style.top = n * -l + "px");
+        },
+      }
+    );
+  }),
+    (o.fn.zoom = function (n) {
+      return this.each(function () {
+        var e = o.extend({}, t, n || {}),
+          i = (e.target && o(e.target)[0]) || this,
+          u = this,
+          c = o(u),
+          a = document.createElement("img"),
+          r = o(a),
+          m = "mousemove.zoom",
+          l = !1,
+          s = !1;
+        if (!e.url) {
+          var f = u.querySelector("img");
+          if (
+            (f && (e.url = f.getAttribute("data-src") || f.currentSrc || f.src),
+            !e.url)
+          )
+            return;
+        }
+        c.one(
+          "zoom.destroy",
+          function (o, t) {
+            c.off(".zoom"),
+              (i.style.position = o),
+              (i.style.overflow = t),
+              (a.onload = null),
+              r.remove();
+          }.bind(this, i.style.position, i.style.overflow)
+        ),
+          (a.onload = function () {
+            function t(t) {
+              f.init(),
+                f.move(t),
+                r
+                  .stop()
+                  .fadeTo(
+                    o.support.opacity ? e.duration : 0,
+                    1,
+                    o.isFunction(e.onZoomIn) ? e.onZoomIn.call(a) : !1
+                  );
+            }
+            function n() {
+              r.stop().fadeTo(
+                e.duration,
+                0,
+                o.isFunction(e.onZoomOut) ? e.onZoomOut.call(a) : !1
+              );
+            }
+            var f = o.zoom(i, u, a, e.magnify);
+            "grab" === e.on
+              ? c.on("mousedown.zoom", function (e) {
+                  1 === e.which &&
+                    (o(document).one("mouseup.zoom", function () {
+                      n(), o(document).off(m, f.move);
+                    }),
+                    t(e),
+                    o(document).on(m, f.move),
+                    e.preventDefault());
+                })
+              : "click" === e.on
+              ? c.on("click.zoom", function (e) {
+                  return l
+                    ? void 0
+                    : ((l = !0),
+                      t(e),
+                      o(document).on(m, f.move),
+                      o(document).one("click.zoom", function () {
+                        n(), (l = !1), o(document).off(m, f.move);
+                      }),
+                      !1);
+                })
+              : "toggle" === e.on
+              ? c.on("click.zoom", function (o) {
+                  l ? n() : t(o), (l = !l);
+                })
+              : "mouseover" === e.on &&
+                (f.init(),
+                c
+                  .on("mouseenter.zoom", t)
+                  .on("mouseleave.zoom", n)
+                  .on(m, f.move)),
+              e.touch &&
+                c
+                  .on("touchstart.zoom", function (o) {
+                    o.preventDefault(),
+                      s
+                        ? ((s = !1), n())
+                        : ((s = !0),
+                          t(
+                            o.originalEvent.touches[0] ||
+                              o.originalEvent.changedTouches[0]
+                          ));
+                  })
+                  .on("touchmove.zoom", function (o) {
+                    o.preventDefault(),
+                      f.move(
+                        o.originalEvent.touches[0] ||
+                          o.originalEvent.changedTouches[0]
+                      );
+                  })
+                  .on("touchend.zoom", function (o) {
+                    o.preventDefault(), s && ((s = !1), n());
+                  }),
+              o.isFunction(e.callback) && e.callback.call(a);
+          }),
+          a.setAttribute("role", "presentation"),
+          (a.alt = ""),
+          (a.src = e.url);
+      });
+    }),
+    (o.fn.zoom.defaults = t);
+})(window.jQuery);
