@@ -77,37 +77,37 @@
             </div>
             <div class="main_menu d-none d-lg-block">
               <ul>
-                <li menu-open="mega-one">
+                <li id="menuholder" menu-open="mega-one">
                   <a href="JavaScript:void(0)"
                     >All Fabrics
                     <span><i class="fa-solid fa-chevron-down"></i></span
                   ></a>
                 </li>
-                <li menu-open="mega-two">
+                <li id="menuholder" menu-open="mega-two">
                   <a href="JavaScript:void(0)"
                     >Fabric End-use
                     <span><i class="fa-solid fa-chevron-down"></i></span
                   ></a>
                 </li>
-                <li menu-open="mega-three">
+                <li id="menuholder" menu-open="mega-three">
                   <a href="JavaScript:void(0)"
                     >Industrial Fabrics
                     <span><i class="fa-solid fa-chevron-down"></i></span
                   ></a>
                 </li>
-                <li menu-open="mega-four">
+                <li id="menuholder" menu-open="mega-four">
                   <a href="JavaScript:void(0)"
                     >Characteristics
                     <span><i class="fa-solid fa-chevron-down"></i></span
                   ></a>
                 </li>
-                <li menu-open="mega-five">
+                <li id="menuholder" menu-open="mega-five">
                   <a href="JavaScript:void(0)"
                     >About Us
                     <span><i class="fa-solid fa-chevron-down"></i></span
                   ></a>
                 </li>
-                <li menu-open="mega-six">
+                <li id="menuholder" menu-open="mega-six">
                   <a href="JavaScript:void(0)"
                     >Our Services
                     <span><i class="fa-solid fa-chevron-down"></i></span
@@ -130,13 +130,35 @@
                     ><i class="fa-solid fa-bag-shopping"></i
                     ><span class="item">12</span></a
                   >
+                  <div class="cartHover_box">
+                    <div class="carthover_box_left">
+                      <img src="img/bs1.png" alt="" />
+                    </div>
+                    <div class="carthover_box_right">
+                      <div
+                        class="carthover_box_right_heading d-flex justify-content-between"
+                      >
+                        <p>Cotton Puff <span>60"</span></p>
+                        <h6>47,500.00</h6>
+                      </div>
+                      <div class="carthover_box_main d-flex">
+                        <div class="carthover_box_main_oval">
+                          <span></span>
+                        </div>
+                        <div class="carthover_box_main_oval_right">
+                          <p>Leaf Green</p>
+                          <p>x 2.5 Yards</p>
+                          <p class="pices">Please cut into 5 equal pieces</p>
+                        </div>
+                      </div>
+                      <div class="cart_added">
+                        <h5 class="text-end">Added to Cart</h5>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  <a
-                    class="smallIconTigger"
-                    willopen="login"
-                    href="JavaScript:void(0)"
-                    href="#"
+                <li id="menuholder" menu-open="mega-seven">
+                  <a href="JavaScript:void(0)"
                     ><i class="fa-regular fa-user"></i
                   ></a>
                 </li>
@@ -735,6 +757,28 @@
             </div>
           </div>
         </div>
+
+        <div class="mega_menu_one megabox" id="mega-seven">
+          <div class="container">
+            <div class="menu_menu_one_wrapper">
+              <h3>Victoria Beckham</h3>
+              <div class="loginDetails">
+                <div class="loginDetails_left">
+                  <img src="img/pp.png" alt="" />
+                </div>
+                <div class="loginDetails_right">
+                  <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Saved Product</a></li>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- mega menu end -->
 
         <!-- small part menu start -->
@@ -825,80 +869,24 @@
           <div
             class="search-heading d-flex align-items-center justify-content-between"
           >
-            <h3><span id="formHeadingText">Login</span> Your Account</h3>
+            <h3>Victoria Beckham</h3>
             <button willclose="login" id="searchClose">
               <img src="img/close.png" alt="" />
             </button>
           </div>
-          <div class="loginSocial">
-            <ul>
-              <li><img src="img/fb.png" alt="" /></li>
-              <li><img src="img/google.png" alt="" /></li>
-            </ul>
-          </div>
-          <div class="lgtabbutton">
-            <ul>
-              <li text="Login" class="tabActive" tab-open="login">Login</li>
-              <li text="Register" tab-open="reg">Register</li>
-            </ul>
-          </div>
-          <div id="login" class="login_form">
-            <form>
-              <div class="login_form_wrapper">
-                <div class="login_form_input">
-                  <label>Email Address or Phone Number</label>
-                  <input type="email" />
-                </div>
-                <div class="login_form_input mt-3">
-                  <label>Password</label>
-                  <div class="login_form_password">
-                    <input id="password" type="password" />
-                    <span
-                      ><i id="formEye" class="fa-regular fa-eye-slash"></i
-                    ></span>
-                  </div>
-                  <p
-                    class="smallIconTigger text-end"
-                    willopen="resetPasswords"
-                    class="text-end"
-                  >
-                    Forgot Password?
-                  </p>
-                </div>
-                <div class="login_form_submit text-center">
-                  <button type="submit">Login</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div id="reg" class="login_form reg_form">
-            <form>
-              <div class="login_form_wrapper">
-                <div class="login_form_input">
-                  <label>Email Address or Phone Number</label>
-                  <input type="email" />
-                </div>
-
-                <div class="login_form_input mt-3">
-                  <label>Full Name</label>
-                  <input type="text" />
-                </div>
-
-                <div class="login_form_input mt-3">
-                  <label>Password</label>
-                  <input type="password" />
-                </div>
-
-                <div class="login_form_input mt-3">
-                  <label>Confirm Password</label>
-                  <input type="password" />
-                </div>
-
-                <div class="login_form_submit text-center">
-                  <button type="submit">Register</button>
-                </div>
-              </div>
-            </form>
+          <div class="loginDetails_mobile">
+            <div class="loginDetailsImg">
+              <img src="img/pp.png" alt="" />
+            </div>
+            <div class="loginLink">
+              <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Saved Product</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -1654,363 +1642,360 @@
 
     <!-- p3hero area start -->
     <section id="p3hero">
-      <div class="container-fluid">
-        <div class="p3hero_wrapper">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="p3hero_left">
-                <div class="zoomed_pic">
-                  <img id="pic" src="img/kak.png" class="feature-image" />
+      <div class="p3hero_wrapper">
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <div class="p3hero_left">
+              <div class="zoomed_pic">
+                <img id="pic" src="img/kak.png" class="feature-image" />
 
-                  <button id="zoombutton">
-                    <img src="img/zoom.png" alt="" />
-                  </button>
-                </div>
+                <button id="zoombutton">
+                  <img src="img/zoom.png" alt="" />
+                </button>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="p3hero_right">
-                <div class="p3hero_right_heading">
-                  <div class="p3hero_right_heading_left">
-                    <h3>Cotton Puff</h3>
-                    <p><span>60"</span> Cotton 100% with texture</p>
-                    <p>
-                      <span id="colorName">Light Blue </span> - Code
-                      <span id="colorCode"> #A5C9D0</span>
-                    </p>
-                  </div>
-                  <div class="p3hero_right_heading_right">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><span><i class="fa-regular fa-heart"></i></span
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="p3hero_right_color">
-                  <div class="p3hro_right_color_box text-center">
-                    <span change_src="img/bs1.png"></span>
-                    <p color_code="#A5C9D0">
-                      Light <br />
-                      Blue
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_two text-center"
-                  >
-                    <span change_src="img/bs2.png"></span>
-                    <p color_code="#AFC0D0">
-                      Harvest <br />
-                      Gold
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_three text-center"
-                  >
-                    <span change_src="img/bs3.png"></span>
-                    <p color_code="#B3876D">
-                      Green <br />
-                      Olive
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_four text-center"
-                  >
-                    <span change_src="img/bs4.png"></span>
-                    <p color_code="#86A4A9">
-                      Dark <br />
-                      Spring
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_five text-center"
-                    allow="notallowed"
-                  >
-                    <span change_src="img/bs5.png"></span>
-                    <img src="img/notallowed.png" alt="" />
-                    <p color_code="#6E8CEE">Aquamarine</p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_six text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A8CDD4">
-                      Coral <br />
-                      Peach
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B2C3D3">
-                      Black <br />
-                      Ink
-                    </p>
-                  </div>
-                  <div class="p3hro_right_color_box text-center">
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A5C9D0">
-                      Light <br />
-                      Blue
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_two text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#AFC0D0">
-                      Harvest <br />
-                      Gold
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_three text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B3876D">
-                      Green <br />
-                      Olive
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_four text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#86A4A9">
-                      Dark <br />
-                      Spring
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_five text-center"
-                    allow="notallowed"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <img src="img/notallowed.png" alt="" />
-                    <p color_code="#6E8CEE">Aquamarine</p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_six text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A8CDD4">
-                      Coral <br />
-                      Peach
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B2C3D3">
-                      Black <br />
-                      Ink
-                    </p>
-                  </div>
-                  <div class="p3hro_right_color_box text-center">
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A5C9D0">
-                      Light <br />
-                      Blue
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_two text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#AFC0D0">
-                      Harvest <br />
-                      Gold
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_three text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B3876D">
-                      Green <br />
-                      Olive
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_four text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#86A4A9">
-                      Dark <br />
-                      Spring
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_five text-center"
-                    allow="notallowed"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <img src="img/notallowed.png" alt="" />
-                    <p color_code="#6E8CEE">Aquamarine</p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_six text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A8CDD4">
-                      Coral <br />
-                      Peach
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B2C3D3">
-                      Black <br />
-                      Ink
-                    </p>
-                  </div>
-                  <div class="p3hro_right_color_box text-center">
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A5C9D0">
-                      Light <br />
-                      Blue
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_two text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#AFC0D0">
-                      Harvest <br />
-                      Gold
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_three text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B3876D">
-                      Green <br />
-                      Olive
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_four text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#86A4A9">
-                      Dark <br />
-                      Spring
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_five text-center"
-                    allow="notallowed"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <img src="img/notallowed.png" alt="" />
-                    <p color_code="#6E8CEE">Aquamarine</p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_six text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#A8CDD4">
-                      Coral <br />
-                      Peach
-                    </p>
-                  </div>
-                  <div
-                    class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
-                  >
-                    <span change_src="img/kak.png"></span>
-                    <p color_code="#B2C3D3">
-                      Black <br />
-                      Ink
-                    </p>
-                  </div>
-                </div>
-                <div class="p3cloth_details">
-                  <div class="p3cloth_details_left">
-                    <h4>Cotton Puff 60” - Light Blue</h4>
-                  </div>
-                  <div class="p3cloth_details_right text-end">
-                    <p><span>Retail</span> ฿ 95 / Yard</p>
-                    <p><span>Wholesale</span> ฿ 85 / Yard</p>
-                  </div>
-                </div>
-                <div class="p3cloth_select">
-                  <div class="p3cloth_select_left_wrapper">
-                    <div class="p3cloth_select_left">
-                      <p>Choose Roll</p>
-                      <select>
-                        <option>Roll 35 yards</option>
-                        <option>Roll 35 yards</option>
-                        <option>Roll 35 yards</option>
-                        <option>Roll 35 yards</option>
-                      </select>
-                    </div>
-                    <div class="p3cloth_select_middle">
-                      <p>Quantity</p>
-                      <div
-                        class="quantity_box d-flex align-items-center justify-content-between"
-                      >
-                        <span id="number">2</span>
-                        <div class="quantity_box_button">
-                          <button id="plus">+</button>
-                          <button id="minus">-</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p3cloth_select_right">
-                      <p>Yards</p>
-                    </div>
-                  </div>
-                  <div class="p3cloth_select_right_wrapper text-end">
-                    <p>Total</p>
-                    <h4>47,500.00</h4>
-                  </div>
-                </div>
-                <div class="notInStock">
+          </div>
+          <div class="col-lg-6">
+            <div class="p3hero_right">
+              <div class="p3hero_right_heading">
+                <div class="p3hero_right_heading_left">
+                  <h3>Cotton Puff</h3>
+                  <p><span>60"</span> Cotton 100% with texture</p>
                   <p>
-                    <img src="img/notallowed.png" alt="" />Sorry, this item is
-                    currently out of stock.
+                    <span id="colorName">Light Blue </span> - Code
+                    <span id="colorCode"> #A5C9D0</span>
+                  </p>
+                </div>
+                <div class="p3hero_right_heading_right">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><span><i class="fa-regular fa-heart"></i></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p3hero_right_color">
+                <div class="p3hro_right_color_box text-center">
+                  <span change_src="img/bs1.png"></span>
+                  <p color_code="#A5C9D0">
+                    Light <br />
+                    Blue
                   </p>
                 </div>
                 <div
-                  class="p3remark d-flex align-items-center justify-content-between"
+                  class="p3hro_right_color_box p3hro_right_color_box_two text-center"
                 >
-                  <a id="remark" href="JavaScript:void(0)"
-                    ><span><i class="fa-solid fa-circle-plus"></i></span
-                    >Remark</a
-                  >
-                  <a id="p3addtocart" href="#">Add to Cart</a>
+                  <span change_src="img/bs2.png"></span>
+                  <p color_code="#AFC0D0">
+                    Harvest <br />
+                    Gold
+                  </p>
                 </div>
-                <div class="p3fabric_cal">
-                  <div class="p3fabric_cal_left">
-                    <a href="#"
-                      ><img src="img/cal.png" alt="" />
-                      <p>
-                        Fabric <br />
-                        Calculator
-                      </p></a
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_three text-center"
+                >
+                  <span change_src="img/bs3.png"></span>
+                  <p color_code="#B3876D">
+                    Green <br />
+                    Olive
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_four text-center"
+                >
+                  <span change_src="img/bs4.png"></span>
+                  <p color_code="#86A4A9">
+                    Dark <br />
+                    Spring
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_five text-center"
+                  allow="notallowed"
+                >
+                  <span change_src="img/bs5.png"></span>
+                  <img src="img/notallowed.png" alt="" />
+                  <p color_code="#6E8CEE">Aquamarine</p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_six text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A8CDD4">
+                    Coral <br />
+                    Peach
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B2C3D3">
+                    Black <br />
+                    Ink
+                  </p>
+                </div>
+                <div class="p3hro_right_color_box text-center">
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A5C9D0">
+                    Light <br />
+                    Blue
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_two text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#AFC0D0">
+                    Harvest <br />
+                    Gold
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_three text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B3876D">
+                    Green <br />
+                    Olive
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_four text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#86A4A9">
+                    Dark <br />
+                    Spring
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_five text-center"
+                  allow="notallowed"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <img src="img/notallowed.png" alt="" />
+                  <p color_code="#6E8CEE">Aquamarine</p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_six text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A8CDD4">
+                    Coral <br />
+                    Peach
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B2C3D3">
+                    Black <br />
+                    Ink
+                  </p>
+                </div>
+                <div class="p3hro_right_color_box text-center">
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A5C9D0">
+                    Light <br />
+                    Blue
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_two text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#AFC0D0">
+                    Harvest <br />
+                    Gold
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_three text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B3876D">
+                    Green <br />
+                    Olive
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_four text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#86A4A9">
+                    Dark <br />
+                    Spring
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_five text-center"
+                  allow="notallowed"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <img src="img/notallowed.png" alt="" />
+                  <p color_code="#6E8CEE">Aquamarine</p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_six text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A8CDD4">
+                    Coral <br />
+                    Peach
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B2C3D3">
+                    Black <br />
+                    Ink
+                  </p>
+                </div>
+                <div class="p3hro_right_color_box text-center">
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A5C9D0">
+                    Light <br />
+                    Blue
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_two text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#AFC0D0">
+                    Harvest <br />
+                    Gold
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_three text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B3876D">
+                    Green <br />
+                    Olive
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_four text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#86A4A9">
+                    Dark <br />
+                    Spring
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_five text-center"
+                  allow="notallowed"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <img src="img/notallowed.png" alt="" />
+                  <p color_code="#6E8CEE">Aquamarine</p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_six text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#A8CDD4">
+                    Coral <br />
+                    Peach
+                  </p>
+                </div>
+                <div
+                  class="p3hro_right_color_box p3hro_right_color_box_seven text-center"
+                >
+                  <span change_src="img/kak.png"></span>
+                  <p color_code="#B2C3D3">
+                    Black <br />
+                    Ink
+                  </p>
+                </div>
+              </div>
+              <div class="p3cloth_details">
+                <div class="p3cloth_details_left">
+                  <h4>Cotton Puff 60” - Light Blue</h4>
+                </div>
+                <div class="p3cloth_details_right text-end">
+                  <p><span>Retail</span> ฿ 95 / Yard</p>
+                  <p><span>Wholesale</span> ฿ 85 / Yard</p>
+                </div>
+              </div>
+              <div class="p3cloth_select">
+                <div class="p3cloth_select_left_wrapper">
+                  <div class="p3cloth_select_left">
+                    <p>Choose Roll</p>
+                    <select>
+                      <option>Roll 35 yards</option>
+                      <option>Roll 35 yards</option>
+                      <option>Roll 35 yards</option>
+                      <option>Roll 35 yards</option>
+                    </select>
+                  </div>
+                  <div class="p3cloth_select_middle">
+                    <p>Quantity</p>
+                    <div
+                      class="quantity_box d-flex align-items-center justify-content-between"
                     >
+                      <span id="number">2</span>
+                      <div class="quantity_box_button">
+                        <button id="plus">+</button>
+                        <button id="minus">-</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="p3fabric_cal_right">
-                    <p>
-                      <strong>Retail Price</strong> Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Quisque enim ex.
-                    </p>
-                    <p>
-                      <strong>Wholesale Price</strong> dolor sit amet,
-                      consectetur adipiscing elit. Quisque enim ex
-                    </p>
-                    <p>Color displayed may differ from the original fabrics.</p>
+                  <div class="p3cloth_select_right">
+                    <p>Yards</p>
                   </div>
+                </div>
+                <div class="p3cloth_select_right_wrapper text-end">
+                  <p>Total</p>
+                  <h4>47,500.00</h4>
+                </div>
+              </div>
+              <div class="notInStock">
+                <p>
+                  <img src="img/notallowed.png" alt="" />Sorry, this item is
+                  currently out of stock.
+                </p>
+              </div>
+              <div
+                class="p3remark d-flex align-items-center justify-content-between"
+              >
+                <a id="remark" href="JavaScript:void(0)"
+                  ><span><i class="fa-solid fa-circle-plus"></i></span>Remark</a
+                >
+                <a id="p3addtocart" href="#">Add to Cart</a>
+              </div>
+              <div class="p3fabric_cal">
+                <div class="p3fabric_cal_left">
+                  <a href="#"
+                    ><img src="img/cal.png" alt="" />
+                    <p>
+                      Fabric <br />
+                      Calculator
+                    </p></a
+                  >
+                </div>
+                <div class="p3fabric_cal_right">
+                  <p>
+                    <strong>Retail Price</strong> Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Quisque enim ex.
+                  </p>
+                  <p>
+                    <strong>Wholesale Price</strong> dolor sit amet, consectetur
+                    adipiscing elit. Quisque enim ex
+                  </p>
+                  <p>Color displayed may differ from the original fabrics.</p>
                 </div>
               </div>
             </div>
@@ -2019,6 +2004,409 @@
       </div>
     </section>
     <!-- p3hero area end -->
+
+    <!-- p3sample area start -->
+    <section id="p3sample">
+      <div class="row g-0">
+        <div class="col-lg-7">
+          <div class="p3sample_left">
+            <div class="p3sample_left_heading">
+              <h3>Sample Book</h3>
+              <a href="#">Browse all Sample Books</a>
+            </div>
+            <div class="p3sample_left_wrapper d-flex">
+              <div class="p3sample_left_wrapper_left">
+                <p>Online swatches for Cotton Puff available for download.</p>
+                <p class="samplepara">Sample Book Cotton & Satin</p>
+                <h4>Free</h4>
+                <a href="#"><img src="img/pdf.png" alt="" />Download PDF</a>
+              </div>
+              <div class="p3sample_left_wrapper_left">
+                <p>Online swatches for Cotton Puff available for download.</p>
+                <p class="samplepara">Sample Book Cotton & Satin</p>
+                <h4>300</h4>
+                <a href="#">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="p3sample_right d-none d-lg-block">
+            <img src="img/sample.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p3sample area end -->
+
+    <!-- p3about area start -->
+    <section id="p3about">
+      <div class="container">
+        <div class="p3about_wrapper">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="p3about_left">
+                <h2>About Cotton Puff</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque enim ex, tincidunt at blandit non, volutpat ut tellus.
+                  Cras viverra sollicitudin enim vel iaculis. Nam eget elit
+                  enim. Vivamus pellentesque orci et auctor lobortis. Nam
+                  euismod, massa ac fermentum aliquam, velit dui posuere sem, at
+                  pretium diam turpis vel turpis. Integer congue eros in tellus
+                  sollicitudin commodo. Suspendisse efficitur vulputate purus ut
+                  ultricies. Nunc finibus fringilla risus, pulvinar volutpat
+                  purus convallis ac. Praesent ligula eros, lacinia id neque
+                  eget, porta vehicula magna. Aenean eget est quis dui mattis
+                  iaculis sit amet et diam. Mauris non tortor a nisi pretium
+                  tincidunt.
+                </p>
+                <p>
+                  Pellentesque rutrum gravida elit, vel molestie nisi efficitur
+                  non. Aenean sit amet mauris iaculis, sagittis felis quis,
+                  pellentesque purus. Quisque ac fermentum elit, eget
+                  consectetur libero. Donec nec lacus fermentum, semper ex id,
+                  pretium nibh. Integer varius sed elit quis lacinia. Ut sed
+                  mauris in dolor laoreet suscipit nec ut mauris. Curabitur
+                  maximus tincidunt lacus eu viverra.
+                </p>
+                <ul>
+                  <li><a href="#">Bedding</a></li>
+                  <li><a href="#">Pillows</a></li>
+                  <li><a href="#">Infants</a></li>
+                  <li><a href="#">Minimal</a></li>
+                  <li><a href="#">Bedding</a></li>
+                  <li><a href="#">Pillows</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p3about_right d-none d-lg-block">
+                <h2>Applications</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p3about area end -->
+
+    <!-- p1bestseller area start -->
+    <section id="p1bestseller" class="p3slider">
+      <div class="container">
+        <div class="p1bestseller_wrapper">
+          <div class="p1bestseller_heading">
+            <h2>Other Similar Products</h2>
+            <a class="d-none d-lg-inline-block" href="#"
+              >View All <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+          <div class="p1bestseller_slider">
+            <div class="owl-carousel products-slider owl-theme">
+              <div class="item">
+                <div class="best_slider_inner content_wrapper">
+                  <img id="bsImg" src="img/bs1.png" alt="" />
+                  <div class="slider_inner_content">
+                    <div class="best_slider_inner_heading">
+                      <div class="best_slider_inner_heading_left">
+                        <h5>Cotton Puff</h5>
+                        <p>Cotton 100% with texture</p>
+                      </div>
+                      <div class="best_slider_inner_heading_right">
+                        <p>60"</p>
+                      </div>
+                    </div>
+                    <div class="slider_color_varient">
+                      <ul>
+                        <li class="color_vari">
+                          <button class="bsactive" imgsrc="img/bs1.png">
+                            <span></span>
+                          </button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs2.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs3.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs4.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs5.png"><span></span></button>
+                        </li>
+                        <li class="color_link">
+                          <a href="#"><span>+10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_favorite">
+                      <div class="sf_left">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                      </div>
+                      <div class="sf_right text-end">
+                        <p><span>Retail</span>฿ 95 / Yard</p>
+                        <p><span>Wholesale</span>฿ 85 / Yard</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="best_slider_inner content_wrapper">
+                  <img id="bsImg" src="img/bs1.png" alt="" />
+                  <div class="slider_inner_content">
+                    <div class="best_slider_inner_heading">
+                      <div class="best_slider_inner_heading_left">
+                        <h5>Cotton Puff</h5>
+                        <p>Cotton 100% with texture</p>
+                      </div>
+                      <div class="best_slider_inner_heading_right">
+                        <p>60"</p>
+                      </div>
+                    </div>
+                    <div class="slider_color_varient">
+                      <ul>
+                        <li class="color_vari">
+                          <button class="bsactive" imgsrc="img/bs1.png">
+                            <span></span>
+                          </button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs2.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs3.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs4.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs5.png"><span></span></button>
+                        </li>
+                        <li class="color_link">
+                          <a href="#"><span>+10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_favorite">
+                      <div class="sf_left">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                      </div>
+                      <div class="sf_right text-end">
+                        <p><span>Retail</span>฿ 95 / Yard</p>
+                        <p><span>Wholesale</span>฿ 85 / Yard</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="best_slider_inner content_wrapper">
+                  <img id="bsImg" src="img/bs1.png" alt="" />
+                  <div class="slider_inner_content">
+                    <div class="best_slider_inner_heading">
+                      <div class="best_slider_inner_heading_left">
+                        <h5>Cotton Puff</h5>
+                        <p>Cotton 100% with texture</p>
+                      </div>
+                      <div class="best_slider_inner_heading_right">
+                        <p>60"</p>
+                      </div>
+                    </div>
+                    <div class="slider_color_varient">
+                      <ul>
+                        <li class="color_vari">
+                          <button class="bsactive" imgsrc="img/bs1.png">
+                            <span></span>
+                          </button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs2.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs3.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs4.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs5.png"><span></span></button>
+                        </li>
+                        <li class="color_link">
+                          <a href="#"><span>+10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_favorite">
+                      <div class="sf_left">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                      </div>
+                      <div class="sf_right text-end">
+                        <p><span>Retail</span>฿ 95 / Yard</p>
+                        <p><span>Wholesale</span>฿ 85 / Yard</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="best_slider_inner content_wrapper">
+                  <img id="bsImg" src="img/bs1.png" alt="" />
+                  <div class="slider_inner_content">
+                    <div class="best_slider_inner_heading">
+                      <div class="best_slider_inner_heading_left">
+                        <h5>Cotton Puff</h5>
+                        <p>Cotton 100% with texture</p>
+                      </div>
+                      <div class="best_slider_inner_heading_right">
+                        <p>60"</p>
+                      </div>
+                    </div>
+                    <div class="slider_color_varient">
+                      <ul>
+                        <li class="color_vari">
+                          <button class="bsactive" imgsrc="img/bs1.png">
+                            <span></span>
+                          </button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs2.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs3.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs4.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs5.png"><span></span></button>
+                        </li>
+                        <li class="color_link">
+                          <a href="#"><span>+10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_favorite">
+                      <div class="sf_left">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                      </div>
+                      <div class="sf_right text-end">
+                        <p><span>Retail</span>฿ 95 / Yard</p>
+                        <p><span>Wholesale</span>฿ 85 / Yard</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="best_slider_inner content_wrapper">
+                  <img id="bsImg" src="img/bs1.png" alt="" />
+                  <div class="slider_inner_content">
+                    <div class="best_slider_inner_heading">
+                      <div class="best_slider_inner_heading_left">
+                        <h5>Cotton Puff</h5>
+                        <p>Cotton 100% with texture</p>
+                      </div>
+                      <div class="best_slider_inner_heading_right">
+                        <p>60"</p>
+                      </div>
+                    </div>
+                    <div class="slider_color_varient">
+                      <ul>
+                        <li class="color_vari">
+                          <button class="bsactive" imgsrc="img/bs1.png">
+                            <span></span>
+                          </button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs2.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs3.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs4.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs5.png"><span></span></button>
+                        </li>
+                        <li class="color_link">
+                          <a href="#"><span>+10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_favorite">
+                      <div class="sf_left">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                      </div>
+                      <div class="sf_right text-end">
+                        <p><span>Retail</span>฿ 95 / Yard</p>
+                        <p><span>Wholesale</span>฿ 85 / Yard</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="best_slider_inner content_wrapper">
+                  <img id="bsImg" src="img/bs1.png" alt="" />
+                  <div class="slider_inner_content">
+                    <div class="best_slider_inner_heading">
+                      <div class="best_slider_inner_heading_left">
+                        <h5>Cotton Puff</h5>
+                        <p>Cotton 100% with texture</p>
+                      </div>
+                      <div class="best_slider_inner_heading_right">
+                        <p>60"</p>
+                      </div>
+                    </div>
+                    <div class="slider_color_varient">
+                      <ul>
+                        <li class="color_vari">
+                          <button class="bsactive" imgsrc="img/bs1.png">
+                            <span></span>
+                          </button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs2.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs3.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs4.png"><span></span></button>
+                        </li>
+                        <li class="color_vari">
+                          <button imgsrc="img/bs5.png"><span></span></button>
+                        </li>
+                        <li class="color_link">
+                          <a href="#"><span>+10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider_favorite">
+                      <div class="sf_left">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                      </div>
+                      <div class="sf_right text-end">
+                        <p><span>Retail</span>฿ 95 / Yard</p>
+                        <p><span>Wholesale</span>฿ 85 / Yard</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev"><img src="img/left.png" alt="" /></div>
+              <div class="owl-next"><img src="img/right.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- p1bestseller area end -->
 
     <!-- footer area start -->
     <footer class="d-none d-lg-block">
@@ -2168,7 +2556,7 @@
 
     <script>
       // change images and src for hero section
-      const imagesTigger = document.querySelectorAll(".p3hro_right_color_box");
+      const imagesTiggers = document.querySelectorAll(".p3hro_right_color_box");
       const bigBoxImg = document.getElementById("pic");
       const colorCode = document.getElementById("colorCode");
       const colorName = document.getElementById("colorName");
@@ -2176,8 +2564,14 @@
       const p3cloth_select = document.querySelector(".p3cloth_select");
       const p3addtocart = document.getElementById("p3addtocart");
 
-      imagesTigger.forEach((item) => {
+      let selectedTigger = null; // Track the currently selected imagesTigger
+
+      imagesTiggers.forEach((item) => {
         item.addEventListener("click", () => {
+          if (selectedTigger) {
+            selectedTigger.classList.remove("selected");
+          }
+
           const imgScr = item.querySelector("span").getAttribute("change_src");
           const color_name = item.querySelector("p").textContent;
           const color_code = item.querySelector("p").getAttribute("color_code");
@@ -2197,6 +2591,9 @@
             p3cloth_select.style.display = "flex";
             p3addtocart.classList.remove("disable");
           }
+
+          selectedTigger = item;
+          selectedTigger.classList.add("selected");
         });
       });
     </script>

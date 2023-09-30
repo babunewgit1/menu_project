@@ -38,7 +38,7 @@
         },
         960: {
           items: 2.5,
-          margin: 5,
+          margin: 15,
         },
         1200: {
           items: 3.2,

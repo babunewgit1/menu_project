@@ -30,12 +30,18 @@ fLinktwo.forEach((item) => {
 });
 
 // code for mega menu open
-const megaTigger = document.querySelectorAll(".main_menu ul li");
+const megaTigger = document.querySelectorAll("#menuholder");
 const megaBox = document.querySelectorAll(".megabox");
 
 megaTigger.forEach((megaItem) => {
   megaItem.addEventListener("click", () => {
     const itemAttr = megaItem.getAttribute("menu-open");
+    megaItem.classList.toggle("activeMenuholder");
+    megaTigger.forEach((otherMegaItem) => {
+      if (otherMegaItem !== megaItem) {
+        otherMegaItem.classList.remove("activeMenuholder");
+      }
+    });
 
     megaBox.forEach((megaboxItem) => {
       const megaboxId = megaboxItem.getAttribute("id");
