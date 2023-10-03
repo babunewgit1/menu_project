@@ -1974,6 +1974,9 @@
                 <a id="remark" href="JavaScript:void(0)"
                   ><span><i class="fa-solid fa-circle-plus"></i></span>Remark</a
                 >
+                <div class="remarkInput">
+                  <input type="text" placeholder="Remark" />
+                </div>
                 <a id="p3addtocart" href="#">Add to Cart</a>
               </div>
               <div class="p3fabric_cal">
@@ -2645,8 +2648,10 @@
 
     <script>
       const remark = document.getElementById("remark");
+      const remarkInput = document.querySelector(".remarkInput");
       remark.addEventListener("click", () => {
-        remark.classList.toggle("changeBtn");
+        remark.style.display = "none";
+        remarkInput.style.display = "block";
       });
     </script>
   </body>
