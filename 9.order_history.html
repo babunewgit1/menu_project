@@ -1639,8 +1639,9 @@
           <div
             class="col-md-6 order-2 order-md-1 d-flex align-items-center justify-content-between"
           >
-            <div class="p2_hero_left">
-              <h2>Sample Books</h2>
+            <div class="p2_hero_left p8_hero_right">
+              <h4>Victoria Beckham</h4>
+              <h2>Order History</h2>
               <p>
                 Each sample book contains 1 fabric design with multiple colour
                 samples. Physical book costs 50 THB but is free to download
@@ -1649,7 +1650,7 @@
             </div>
           </div>
           <div class="col-md-6 order-1 order-md-2">
-            <div class="p2_hero_right">
+            <div class="p2_hero_right d-none d-md-block">
               <img src="img/p5hero.png" alt="" />
             </div>
           </div>
@@ -1658,486 +1659,418 @@
     </section>
     <!-- p5_hero area end -->
 
-    <!-- p2mobile_filter area start -->
-    <section id="p2mobile_filter" class="d-block d-lg-none">
+    <!-- p9tab area start -->
+    <section id="p9tab">
       <div class="container">
-        <div
-          class="p2mobile_filter_wrapper d-flex align-items-center justify-content-between"
-        >
-          <p>Found 14 Items</p>
-          <button id="mobile_filter">
-            <img src="img/filter.png" alt="" />
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- p2mobile_filter area end -->
-
-    <!-- p2mobile_check area start -->
-    <div class="p2mobile_check" id="p2filter_mobile">
-      <div class="container">
-        <div class="p2mobile_check_wrapper p5mobile_check">
-          <div class="p2mobile_check_top">
-            <div class="p2mobile_check_heading">
-              <h3>Filter</h3>
-              <button id="close_filter">
-                <img src="img/close.png" alt="" />
-              </button>
-            </div>
-            <div class="m_cata">
-              <h4>Sort by</h4>
-              <div class="m_cata_wrapper d-block">
-                <div class="m_cata_wrapper_left w-100">
-                  <div class="p2filter_drop_one_block">
-                    <label class="check-box"
-                      >Price Low to High
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <div class="p2filter_drop_one_block">
-                    <label class="check-box"
-                      >Price High to Low
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <div class="p2filter_drop_one_block">
-                    <label class="check-box"
-                      >New Arrivals
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p2mobile_check_bottom">
+        <div class="p9tab_wrapper">
+          <div class="p9tab_buttons">
             <ul>
-              <li><a href="#">Apply Filter</a></li>
-              <li><a href="#">Clear Filter</a></li>
+              <li filter_data="all" class="activetab">All Orders</li>
+              <li filter_data="pendingpayment">Pending Payments</li>
+              <li filter_data="pendingdelivery">Pending Deliveries</li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- p2mobile_check area end -->
-
-    <!-- p5filter area start -->
-    <section id="p2filter" class="d-none d-lg-block">
-      <div class="container">
-        <div class="p2filter_wrapper">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="p5filter d-flex align-items-center">
-                <div class="p2filter_left">
-                  <ul>
-                    <li will_open="drop_one">
-                      Sort By
-                      <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                  </ul>
+          <div class="p9tab_content">
+            <div class="p9tab_cnt_box_wrapper" data_set="all">
+              <div class="p9tab_content_box">
+                <div class="p9tab_cnt_box_heading">
+                  <div class="p9tab_cnt_box_heading_left">
+                    <div class="p9tab_cnt_box_heading_left_one">
+                      <p>
+                        <span class="debider">Order Number</span>
+                        <span>:</span> BLT230902827
+                      </p>
+                      <p>
+                        <span class="debider">Date</span> <span>:</span> Sep 5,
+                        2023
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_one p9tab_cnt_box_heading_left_two"
+                    >
+                      <p>
+                        <span class="debider">Delivery Type</span>
+                        <span>:</span> Self Pick-up
+                      </p>
+                      <p>
+                        <span class="debider">Payment Type</span>
+                        <span>:</span> Credit Card
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_three d-none d-lg-block"
+                    >
+                      <span>PAID</span>
+                    </div>
+                  </div>
+                  <div class="p9tab_cnt_box_heading_right d-none d-lg-block">
+                    <a href="#"
+                      >View Order
+                      <span><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
                 </div>
-                <div
-                  class="p2filter_right text-end d-flex align-items-center justify-content-end"
-                >
-                  <ul>
-                    <li>Apply Filter</li>
-                    <li>Clear Filter</li>
-                  </ul>
+                <div class="p9tab_cnt_box_product">
+                  <div class="cartHover_box">
+                    <div class="carthover_box_left">
+                      <img src="img/bs1.png" alt="" />
+                    </div>
+                    <div class="carthover_box_right">
+                      <div
+                        class="carthover_box_right_heading d-flex justify-content-between"
+                      >
+                        <p>Cotton Puff <span>60"</span></p>
+                        <h6>120.00</h6>
+                      </div>
+                      <div class="carthover_box_main d-flex">
+                        <div class="carthover_box_main_oval">
+                          <span></span>
+                        </div>
+                        <div class="carthover_box_main_oval_right">
+                          <p>Leaf Green</p>
+                          <p>x 2.5 Yards</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_total">
+                  <div class="p9tab_cnt_box_total_left">
+                    <p>2 items in this order</p>
+                  </div>
+                  <div class="p9tab_cnt_box_total_right">
+                    <p><span>Total</span>360.00</p>
+                  </div>
                 </div>
               </div>
+              <div class="morder d-flex d-lg-none">
+                <span>PAID</span>
+                <a href="#"
+                  >View Order<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
             </div>
-            <div class="col-lg-6">
-              <div
-                class="p2filter_right text-end d-flex align-items-center justify-content-end"
-              >
-                <p>Found 14 Items</p>
+            <div class="p9tab_cnt_box_wrapper" data_set="all">
+              <div class="p9tab_content_box">
+                <div class="p9tab_cnt_box_heading">
+                  <div class="p9tab_cnt_box_heading_left">
+                    <div class="p9tab_cnt_box_heading_left_one">
+                      <p>
+                        <span class="debider">Order Number</span>
+                        <span>:</span> BLT230902827
+                      </p>
+                      <p>
+                        <span class="debider">Date</span> <span>:</span> Sep 5,
+                        2023
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_one p9tab_cnt_box_heading_left_two"
+                    >
+                      <p>
+                        <span class="debider">Delivery Type</span>
+                        <span>:</span> Self Pick-up
+                      </p>
+                      <p>
+                        <span class="debider">Payment Type</span>
+                        <span>:</span> Credit Card
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_three d-none d-lg-block"
+                    >
+                      <span>PAID</span>
+                    </div>
+                  </div>
+                  <div class="p9tab_cnt_box_heading_right d-none d-lg-block">
+                    <a href="#"
+                      >View Order
+                      <span><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_product">
+                  <div class="cartHover_box">
+                    <div class="carthover_box_left">
+                      <img src="img/bs1.png" alt="" />
+                    </div>
+                    <div class="carthover_box_right">
+                      <div
+                        class="carthover_box_right_heading d-flex justify-content-between"
+                      >
+                        <p>Cotton Puff <span>60"</span></p>
+                        <h6>120.00</h6>
+                      </div>
+                      <div class="carthover_box_main d-flex">
+                        <div class="carthover_box_main_oval">
+                          <span></span>
+                        </div>
+                        <div class="carthover_box_main_oval_right">
+                          <p>Leaf Green</p>
+                          <p>x 2.5 Yards</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_total">
+                  <div class="p9tab_cnt_box_total_left">
+                    <p>2 items in this order</p>
+                  </div>
+                  <div class="p9tab_cnt_box_total_right">
+                    <p><span>Total</span>360.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="morder d-flex d-lg-none">
+                <span>PAID</span>
+                <a href="#"
+                  >View Order<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="p9tab_cnt_box_wrapper" data_set="all">
+              <div class="p9tab_content_box">
+                <div class="p9tab_cnt_box_heading">
+                  <div class="p9tab_cnt_box_heading_left">
+                    <div class="p9tab_cnt_box_heading_left_one">
+                      <p>
+                        <span class="debider">Order Number</span>
+                        <span>:</span> BLT230902827
+                      </p>
+                      <p>
+                        <span class="debider">Date</span> <span>:</span> Sep 5,
+                        2023
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_one p9tab_cnt_box_heading_left_two"
+                    >
+                      <p>
+                        <span class="debider">Delivery Type</span>
+                        <span>:</span> Self Pick-up
+                      </p>
+                      <p>
+                        <span class="debider">Payment Type</span>
+                        <span>:</span> Credit Card
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_three d-none d-lg-block"
+                    >
+                      <span>PAID</span>
+                    </div>
+                  </div>
+                  <div class="p9tab_cnt_box_heading_right d-none d-lg-block">
+                    <a href="#"
+                      >View Order
+                      <span><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_product">
+                  <div class="cartHover_box">
+                    <div class="carthover_box_left">
+                      <img src="img/bs1.png" alt="" />
+                    </div>
+                    <div class="carthover_box_right">
+                      <div
+                        class="carthover_box_right_heading d-flex justify-content-between"
+                      >
+                        <p>Cotton Puff <span>60"</span></p>
+                        <h6>120.00</h6>
+                      </div>
+                      <div class="carthover_box_main d-flex">
+                        <div class="carthover_box_main_oval">
+                          <span></span>
+                        </div>
+                        <div class="carthover_box_main_oval_right">
+                          <p>Leaf Green</p>
+                          <p>x 2.5 Yards</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_total">
+                  <div class="p9tab_cnt_box_total_left">
+                    <p>2 items in this order</p>
+                  </div>
+                  <div class="p9tab_cnt_box_total_right">
+                    <p><span>Total</span>360.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="morder d-flex d-lg-none">
+                <span>PAID</span>
+                <a href="#"
+                  >View Order<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="p9tab_cnt_box_wrapper" data_set="pendingpayment">
+              <div class="p9tab_content_box">
+                <div class="p9tab_cnt_box_heading">
+                  <div class="p9tab_cnt_box_heading_left">
+                    <div class="p9tab_cnt_box_heading_left_one">
+                      <p>
+                        <span class="debider">Order Number</span>
+                        <span>:</span> BLT230902827
+                      </p>
+                      <p>
+                        <span class="debider">Date</span> <span>:</span> Sep 5,
+                        2023
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_one p9tab_cnt_box_heading_left_two"
+                    >
+                      <p>
+                        <span class="debider">Delivery Type</span>
+                        <span>:</span> Self Pick-up
+                      </p>
+                      <p>
+                        <span class="debider">Payment Type</span>
+                        <span>:</span> Credit Card
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_three d-none d-lg-block"
+                    >
+                      <span>Pending Payments</span>
+                    </div>
+                  </div>
+                  <div class="p9tab_cnt_box_heading_right d-none d-lg-block">
+                    <a href="#"
+                      >View Order
+                      <span><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_product">
+                  <div class="cartHover_box">
+                    <div class="carthover_box_left">
+                      <img src="img/bs1.png" alt="" />
+                    </div>
+                    <div class="carthover_box_right">
+                      <div
+                        class="carthover_box_right_heading d-flex justify-content-between"
+                      >
+                        <p>Cotton Puff <span>60"</span></p>
+                        <h6>120.00</h6>
+                      </div>
+                      <div class="carthover_box_main d-flex">
+                        <div class="carthover_box_main_oval">
+                          <span></span>
+                        </div>
+                        <div class="carthover_box_main_oval_right">
+                          <p>Leaf Green</p>
+                          <p>x 2.5 Yards</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_total">
+                  <div class="p9tab_cnt_box_total_left">
+                    <p>2 items in this order</p>
+                  </div>
+                  <div class="p9tab_cnt_box_total_right">
+                    <p><span>Total</span>360.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="morder d-flex d-lg-none">
+                <span>Pending Payments</span>
+                <a href="#"
+                  >View Order<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="p9tab_cnt_box_wrapper" data_set="pendingdelivery">
+              <div class="p9tab_content_box">
+                <div class="p9tab_cnt_box_heading">
+                  <div class="p9tab_cnt_box_heading_left">
+                    <div class="p9tab_cnt_box_heading_left_one">
+                      <p>
+                        <span class="debider">Order Number</span>
+                        <span>:</span> BLT230902827
+                      </p>
+                      <p>
+                        <span class="debider">Date</span> <span>:</span> Sep 5,
+                        2023
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_one p9tab_cnt_box_heading_left_two"
+                    >
+                      <p>
+                        <span class="debider">Delivery Type</span>
+                        <span>:</span> Self Pick-up
+                      </p>
+                      <p>
+                        <span class="debider">Payment Type</span>
+                        <span>:</span> Credit Card
+                      </p>
+                    </div>
+                    <div
+                      class="p9tab_cnt_box_heading_left_three d-none d-lg-block"
+                    >
+                      <span>Pending Deliveries</span>
+                    </div>
+                  </div>
+                  <div class="p9tab_cnt_box_heading_right d-none d-lg-block">
+                    <a href="#"
+                      >View Order
+                      <span><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_product">
+                  <div class="cartHover_box">
+                    <div class="carthover_box_left">
+                      <img src="img/bs1.png" alt="" />
+                    </div>
+                    <div class="carthover_box_right">
+                      <div
+                        class="carthover_box_right_heading d-flex justify-content-between"
+                      >
+                        <p>Cotton Puff <span>60"</span></p>
+                        <h6>120.00</h6>
+                      </div>
+                      <div class="carthover_box_main d-flex">
+                        <div class="carthover_box_main_oval">
+                          <span></span>
+                        </div>
+                        <div class="carthover_box_main_oval_right">
+                          <p>Leaf Green</p>
+                          <p>x 2.5 Yards</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p9tab_cnt_box_total">
+                  <div class="p9tab_cnt_box_total_left">
+                    <p>2 items in this order</p>
+                  </div>
+                  <div class="p9tab_cnt_box_total_right">
+                    <p><span>Total</span>360.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="morder d-flex d-lg-none">
+                <span>Pending Deliveries</span>
+                <a href="#"
+                  >View Order<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
               </div>
             </div>
           </div>
-          <div class="p2_filter_drop_one" id="drop_one">
-            <div class="p2filter_drop_one_wrapper">
-              <div class="p2filter_drop_one_block">
-                <label class="check-box"
-                  >Price Low to High
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-              <div class="p2filter_drop_one_block">
-                <label class="check-box"
-                  >Price High to Low
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-              <div class="p2filter_drop_one_block">
-                <label class="check-box">
-                  New Arrivals
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- p5filter area end -->
-
-    <!-- p5sample area start -->
-    <section id="p5sample">
-      <div class="container">
-        <div class="p5sample_wrapper">
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-          <div class="p5sample_block">
-            <div class="p5sample_block_img">
-              <img src="img/cloth.png" alt="" />
-            </div>
-            <div class="p5sample_block_cnt">
-              <div
-                class="p5sample_block_cnt_heading d-flex justify-content-between"
-              >
-                <div class="p5sample_block_cnt_left">
-                  <h5>Cotton Puff and Satin Sample Book</h5>
-                  <p>145 Swatches</p>
-                </div>
-                <div class="p5sample_block_cnt_right">
-                  <p>60"</p>
-                </div>
-              </div>
-              <div class="p5sample_block_cnt_price text-end">
-                <p>฿ 300</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p2loader text-center">
-          <ul>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-          </ul>
         </div>
       </div>
     </section>
-    <!-- p5sample area end -->
+    <!-- p9tab area end -->
 
     <!-- footer area start -->
     <footer class="d-none d-lg-block">
@@ -2248,37 +2181,50 @@
     <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
 
     <script>
-      const p2dropItem = document.querySelectorAll(".p2filter_left ul li");
-      const p2dropBox = document.querySelectorAll(".p2_filter_drop_one");
-
-      p2dropItem.forEach((item) => {
+      const tabButtons = document.querySelectorAll(".p9tab_buttons ul li");
+      tabButtons.forEach((item) => {
         item.addEventListener("click", () => {
-          const itemAttr = item.getAttribute("will_open");
-
-          p2dropBox.forEach((boxItem) => {
-            const boxAttr = boxItem.getAttribute("id");
-            if (itemAttr === boxAttr) {
-              boxItem.classList.toggle("openDrop");
-            } else {
-              boxItem.classList.remove("openDrop");
-            }
+          tabButtons.forEach((btn) => {
+            btn.classList.remove("activetab");
           });
+          item.classList.add("activetab");
         });
       });
 
-      const p2filter = document.getElementById("p2filter_mobile");
-      const mobile_filter = document.getElementById("mobile_filter");
-      const mainbody = document.querySelector("body");
-      const close_filter = document.querySelector("#close_filter");
+      const allOrdersButton = document.querySelector('[filter_data="all"]');
+      const pendingPaymentsButton = document.querySelector(
+        '[filter_data="pendingpayment"]'
+      );
+      const pendingDeliveriesButton = document.querySelector(
+        '[filter_data="pendingdelivery"]'
+      );
+      const contentBoxes = document.querySelectorAll(".p9tab_cnt_box_wrapper");
 
-      mobile_filter.addEventListener("click", () => {
-        p2filter.classList.add("openFilter");
-        mainbody.classList.add("overlay");
+      function toggleContentBoxes(dataSetValue) {
+        contentBoxes.forEach(function (box) {
+          if (
+            dataSetValue === "all" ||
+            box.getAttribute("data_set") === dataSetValue
+          ) {
+            box.style.display = "block";
+          } else {
+            box.style.display = "none";
+          }
+        });
+      }
+
+      toggleContentBoxes("all");
+
+      allOrdersButton.addEventListener("click", function () {
+        toggleContentBoxes("all");
       });
 
-      close_filter.addEventListener("click", () => {
-        p2filter.classList.remove("openFilter");
-        mainbody.classList.remove("overlay");
+      pendingPaymentsButton.addEventListener("click", function () {
+        toggleContentBoxes("pendingpayment");
+      });
+
+      pendingDeliveriesButton.addEventListener("click", function () {
+        toggleContentBoxes("pendingdelivery");
       });
     </script>
   </body>
