@@ -1681,7 +1681,9 @@
         <div class="p7address_wrapper">
           <div class="p7address_one p7address_bg">
             <div class="p7address_one_para">
-              <p><img src="img/plus.png" alt="" />Add New Address</p>
+              <p willopen="manageAddress" class="smallIconTigger">
+                <img src="img/plus.png" alt="" />Add New Address
+              </p>
             </div>
           </div>
           <div class="p7address_one p7address_bg">
@@ -1738,7 +1740,9 @@
                 <a href="#">CHANGE</a>
               </div>
               <div class="p7ifdeliver">
-                <p>Add Shipping Address</p>
+                <p willopen="addressAdd" class="smallIconTigger">
+                  Add Shipping Address
+                </p>
               </div>
             </div>
           </div>
@@ -1900,7 +1904,291 @@
     <!-- footer area end -->
 
     <!-- add_new_address area start -->
+    <div class="add_new_address rightsideTarget" id="addressAdd">
+      <div
+        class="addna_heading d-flex align-items-center justify-content-between"
+      >
+        <h3>Add Address</h3>
+        <button willclose="addressAdd" id="searchClose">
+          <img src="img/close.png" alt="" />
+        </button>
+      </div>
+      <div class="addna_tab_button">
+        <ul>
+          <li tabopen="individual" class="tabActive">As an Individual</li>
+          <li tabopen="company">As a Company</li>
+        </ul>
+      </div>
+      <div class="addna_form" id="individual">
+        <form action="">
+          <div class="addna_form_wraper">
+            <div class="login_form_input">
+              <label>Full Name</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Telephone</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>House No. / Building / Soi / Road</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Province</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>District</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>District</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Sub-district</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Postal Code</label>
+              <input type="text" />
+            </div>
+            <div class="addAddresscheck">
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Set as default shipping address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Set as default billing address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="p7submit">
+              <button>Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="addna_form addna_form_two" id="company">
+        <form action="">
+          <div class="addna_form_wraper">
+            <div class="login_form_input">
+              <label>Telephone</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>House No. / Building / Soi / Road</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Province</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>District</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>District</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Sub-district</label>
+              <input type="text" />
+            </div>
+            <div class="login_form_input">
+              <label>Postal Code</label>
+              <input type="text" />
+            </div>
+            <div class="addAddresscheck">
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Set as default shipping address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Set as default billing address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="p7submit">
+              <button>Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <!-- add_new_address area end -->
+
+    <!-- manage_address area start -->
+    <div class="add_new_address rightsideTarget" id="manageAddress">
+      <div
+        class="addna_heading d-flex align-items-center justify-content-between"
+      >
+        <h3>Manage Addresses</h3>
+        <button willclose="manageAddress" id="searchClose">
+          <img src="img/close.png" alt="" />
+        </button>
+      </div>
+      <div class="address_manage">
+        <div class="address_mange_one">
+          <div class="address_manage_one_heading">
+            <div class="address_manage_one_heading_left">
+              <h4>David Beckham</h4>
+              <p>Tel: 081 837 3635</p>
+            </div>
+            <div class="address_manage_one_heading_right">
+              <a href="#">Choose this address</a>
+            </div>
+          </div>
+          <div class="address_manage_one_cnt">
+            <p>1234/45 Some Road</p>
+            <p>Some Sub, Some District</p>
+            <p>Bangkok 10600</p>
+            <p>Thailand</p>
+          </div>
+          <div class="address_manage_one_check">
+            <div class="addAddresscheck m-0">
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default shipping address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default billing address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="address_mange_one">
+          <div class="address_manage_one_heading">
+            <div class="address_manage_one_heading_left">
+              <h4>David Beckham</h4>
+              <p>Tel: 081 837 3635</p>
+            </div>
+            <div class="address_manage_one_heading_right">
+              <a href="#">Choose this address</a>
+            </div>
+          </div>
+          <div class="address_manage_one_cnt">
+            <p>1234/45 Some Road</p>
+            <p>Some Sub, Some District</p>
+            <p>Bangkok 10600</p>
+            <p>Thailand</p>
+          </div>
+          <div class="address_manage_one_check">
+            <div class="addAddresscheck m-0">
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default shipping address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default billing address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="address_mange_one">
+          <div class="address_manage_one_heading">
+            <div class="address_manage_one_heading_left">
+              <h4>David Beckham</h4>
+              <p>Tel: 081 837 3635</p>
+            </div>
+            <div class="address_manage_one_heading_right">
+              <a href="#">Choose this address</a>
+            </div>
+          </div>
+          <div class="address_manage_one_cnt">
+            <p>1234/45 Some Road</p>
+            <p>Some Sub, Some District</p>
+            <p>Bangkok 10600</p>
+            <p>Thailand</p>
+          </div>
+          <div class="address_manage_one_check">
+            <div class="addAddresscheck m-0">
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default shipping address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default billing address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="address_mange_one">
+          <div class="address_manage_one_heading">
+            <div class="address_manage_one_heading_left">
+              <h4>David Beckham</h4>
+              <p>Tel: 081 837 3635</p>
+            </div>
+            <div class="address_manage_one_heading_right">
+              <a href="#">Choose this address</a>
+            </div>
+          </div>
+          <div class="address_manage_one_cnt">
+            <p>1234/45 Some Road</p>
+            <p>Some Sub, Some District</p>
+            <p>Bangkok 10600</p>
+            <p>Thailand</p>
+          </div>
+          <div class="address_manage_one_check">
+            <div class="addAddresscheck m-0">
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default shipping address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="addAddresscheck_one">
+                <label class="check-box"
+                  >Default billing address
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p7submit">
+          <button>Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- manage_address area end -->
 
     <!-- Main jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -1961,6 +2249,30 @@
 
       deliver.addEventListener("click", () => {
         deliverchoose.classList.add("picupShow");
+      });
+    </script>
+
+    <script>
+      const tabbtns = document.querySelectorAll(".addna_tab_button ul li");
+      const tabBox = document.querySelectorAll(".addna_form");
+
+      tabbtns.forEach((item) => {
+        item.addEventListener("click", () => {
+          tabbtns.forEach((tabitem) => {
+            tabitem.classList.remove("tabActive");
+          });
+          item.classList.add("tabActive");
+
+          const tabbuttonAttr = item.getAttribute("tabopen");
+          tabBox.forEach((box) => {
+            const boxAttr = box.getAttribute("id");
+            if (boxAttr === tabbuttonAttr) {
+              box.style.display = "block";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
       });
     </script>
   </body>

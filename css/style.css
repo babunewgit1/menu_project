@@ -540,7 +540,7 @@ h3.mega_menu_heading {
 }
 
 .opensidebar {
-  right: 0;
+  right: 0 !important;
 }
 
 .search-heading h3 {
@@ -808,7 +808,7 @@ span#searchValue {
   display: none;
 }
 
-.lgtabbutton ul li.tabActive {
+.tabActive {
   background-color: #2e3c18;
   color: #fff;
 }
@@ -3664,6 +3664,7 @@ li.cart_beg:hover .cartHover_box {
   align-items: center;
   gap: 20px;
   justify-content: center;
+  cursor: pointer;
 }
 
 .p7address_one_para p img {
@@ -3895,6 +3896,208 @@ li.cart_beg:hover .cartHover_box {
   cursor: pointer;
 }
 /* -- p7counter area end -- */
+
+/* -- add_new_address area start -- */
+.add_new_address {
+  position: fixed;
+  width: 550px;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  right: -100%;
+  z-index: 99999;
+  padding: 25px;
+  transition: all 0.4s ease;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.addna_heading h3 {
+  font-weight: normal;
+  color: #576554;
+  font-size: 24px;
+}
+
+.addna_heading button {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.addna_heading button img {
+  display: inline-block;
+  width: 22px;
+}
+
+.addna_tab_button {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.addna_tab_button ul {
+  display: flex;
+  align-items: center;
+}
+
+.addna_tab_button ul li {
+  display: block;
+  width: 50%;
+  text-align: center;
+  border: 1px solid #2e3c18;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.addna_form_wraper .login_form_input {
+  margin-bottom: 25px;
+}
+
+.addAddresscheck_one .check-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.addAddresscheck_one .check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.addAddresscheck_one .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #b4bcaa;
+}
+
+.addAddresscheck_one .check-box input:checked ~ .checkmark {
+  background-color: #b4bcaa;
+}
+
+.addAddresscheck_one .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.addAddresscheck_one .check-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.addAddresscheck_one .check-box .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.addAddresscheck {
+  margin-left: 60px;
+}
+
+.p7submit {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.p7submit button {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: #2e3c18;
+  outline: none;
+  color: #fff;
+  border: 0;
+  width: 250px;
+  margin: auto;
+  transition: all 0.2s ease;
+}
+
+.p7submit button:hover {
+  opacity: 0.7;
+}
+
+.p7ifdeliver p {
+  cursor: pointer;
+}
+/* -- add_new_address area end -- */
+
+/* -- manage_address area start -- */
+.address_manage_one_heading_left h4 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #2f3d18;
+}
+
+.address_manage_one_heading_left p {
+  font-size: 18px;
+}
+
+.address_manage_one_heading_right a {
+  display: inline-block;
+  font-size: 18px;
+  color: #9bb974;
+  transition: all 0.2s ease;
+}
+
+.address_manage_one_heading_right a:hover {
+  opacity: 0.7;
+}
+
+.address_manage_one_heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address_manage_one_cnt {
+  margin: 20px 0px;
+}
+
+.address_manage_one_cnt p {
+  font-size: 18px;
+}
+
+.address_manage_one_check .addAddresscheck {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.address_manage_one_check .addAddresscheck_one .check-box {
+  padding-left: 25px;
+}
+
+.address_mange_one {
+  border: 1px solid #b4bdaa;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-top: 25px;
+}
+
+.addna_form_two {
+  display: none;
+}
+
+/* -- manage_address area end -- */
 
 /* !====== Page 7 end ====== */
 
