@@ -167,10 +167,6 @@ Medium Screen - Others
     padding-left: calc((100% - 1110px) / 2);
   }
 
-  .p2_hero_left {
-    padding: 100px 0px;
-  }
-
   .p2_hero_right {
     padding-left: 0;
     margin-top: 0;
@@ -523,11 +519,6 @@ Medium Screen - Others
 
   .best_slider_inner_heading_left p {
     font-size: 15px;
-  }
-
-  .p2_hero_left {
-    max-width: 515px;
-    padding: 70px 0px;
   }
 
   .p2_hero_right {
@@ -1016,7 +1007,6 @@ Medium Screen - Others
   }
 
   .p2_hero_left {
-    max-width: 440px;
     padding: 50px 0px;
   }
 
@@ -1340,6 +1330,18 @@ Medium Screen - Others
 
   .p9tab_cnt_box_heading_right a {
     font-size: 15px;
+  }
+
+  .p13fiter_blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+
+  .p14blog_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
   }
 }
 
@@ -2165,6 +2167,87 @@ Small Screen - Tablate
 
   .p9tab_cnt_box_wrapper {
     margin-bottom: 40px;
+  }
+
+  .p11slide {
+    padding-top: 40px !important;
+  }
+
+  .p12password_wrapper {
+    max-width: 80%;
+  }
+
+  #p13filter {
+    padding-top: 0;
+  }
+
+  .p13filter_button ul li {
+    width: 140px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .p13filter_button ul {
+    gap: 10px;
+    width: 450px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .p13fiter_blog {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .p13filter_button ul::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .p13blog_cnt_heading h4 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .p13blog_cnt_para p {
+    font-size: 14px;
+  }
+
+  .p13blog_cnt_heading p {
+    font-size: 12px;
+  }
+
+  .p14blog_left p {
+    font-size: 16px;
+  }
+
+  .p14blog_write_wrapper h2 {
+    font-size: 38px;
+  }
+
+  .p14filter_button {
+    margin-top: 40px;
+  }
+
+  #p14blog_write {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .p14blog_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .p15testi_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+  }
+
+  .p15testi_block_name {
+    margin-top: 30px;
   }
 }
 
@@ -3319,6 +3402,126 @@ Small Screen - Mobile
 
   .p9tab_cnt_box_wrapper {
     margin-bottom: 40px;
+  }
+
+  .p11slide {
+    padding-top: 40px !important;
+  }
+
+  #p12password {
+    padding: 40px 0px;
+  }
+
+  .p12password_wrapper {
+    max-width: 100%;
+  }
+
+  .p12password_block_one label {
+    display: block;
+    font-size: 14px;
+  }
+
+  .passwordInput input {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .p12password_block_submit button {
+    font-size: 14px;
+    padding: 11px 70px;
+  }
+
+  .p12password_block_submit {
+    margin-top: 30px;
+  }
+
+  .passwordInput span {
+    top: 10px;
+  }
+
+  #p13filter {
+    padding-top: 0;
+  }
+
+  .p13filter_button ul li {
+    width: 140px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .p13filter_button ul {
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .p13fiter_blog {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 0px 40px;
+  }
+
+  .p13filter_button ul::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .p13blog_cnt_heading h4 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .p13blog_cnt_para p {
+    font-size: 14px;
+  }
+
+  .p13blog_cnt_heading p {
+    font-size: 12px;
+  }
+
+  #p14blog {
+    padding-top: 25px;
+    overflow: hidden;
+  }
+
+  .p14blog_left p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .p14filter_button {
+    margin-top: 30px;
+    margin-right: -15px;
+    overflow: hidden;
+  }
+
+  #p14blog_write {
+    padding-top: 35px;
+  }
+
+  .p14blog_write_wrapper h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .p14blog_block {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  #p14blog_write .p13fiter_blog_box {
+    margin-top: 20px;
+  }
+
+  .p15testi_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+    row-gap: 45px;
+  }
+
+  .p15testi_block_name {
+    margin-top: 20px;
   }
 }
 
@@ -4485,5 +4688,139 @@ Xtra Small Screen - Small Mobile
 
   .p9tab_cnt_box_wrapper {
     margin-bottom: 40px;
+  }
+
+  .p10tab_buttons {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .p10tab_buttons ul li {
+    width: 173px;
+  }
+
+  .p11slide {
+    padding-top: 40px !important;
+  }
+
+  #p12password {
+    padding: 40px 0px;
+  }
+
+  .p12password_wrapper {
+    max-width: 100%;
+  }
+
+  .p12password_block_one label {
+    display: block;
+    font-size: 14px;
+  }
+
+  .passwordInput input {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .p12password_block_submit button {
+    font-size: 14px;
+    padding: 11px 70px;
+  }
+
+  .p12password_block_submit {
+    margin-top: 30px;
+  }
+
+  .passwordInput span {
+    top: 10px;
+  }
+
+  #p13filter {
+    padding-top: 0;
+  }
+
+  .p13filter_button ul li {
+    width: 140px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .p13filter_button ul {
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .p13fiter_blog {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 0px 40px;
+  }
+
+  .p13filter_button ul::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .p13blog_cnt_heading h4 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .p13blog_cnt_para p {
+    font-size: 14px;
+  }
+
+  .p13blog_cnt_heading p {
+    font-size: 12px;
+  }
+
+  #p14blog {
+    padding-top: 25px;
+    overflow: hidden;
+  }
+
+  .p14blog_left p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .p14filter_button {
+    margin-top: 30px;
+    margin-right: -15px;
+    overflow: hidden;
+  }
+
+  #p14blog_write {
+    padding-top: 35px;
+  }
+
+  .p14blog_write_wrapper h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .p14blog_block {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  #p14blog_write .p13fiter_blog_box {
+    margin-top: 20px;
+  }
+
+  #p15testi {
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
+
+  .p15testi_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+    row-gap: 45px;
+  }
+
+  .p15testi_block_name {
+    margin-top: 20px;
   }
 }

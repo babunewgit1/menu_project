@@ -162,21 +162,6 @@ tabButton.forEach((tabitem) => {
   });
 });
 
-// password show hide
-const eye = document.getElementById("formEye");
-const passwordInput = document.getElementById("password");
-eye.addEventListener("click", () => {
-  const inputType = passwordInput.getAttribute("type");
-
-  if (inputType === "password") {
-    passwordInput.setAttribute("type", "text");
-    eye.classList.replace("fa-eye-slash", "fa-eye");
-  } else {
-    passwordInput.setAttribute("type", "password");
-    eye.classList.replace("fa-eye", "fa-eye-slash");
-  }
-});
-
 // code for discount apply
 const discountInput = document.getElementById("disInput");
 const discountApply = document.getElementById("apply");
@@ -276,4 +261,19 @@ allMenuClose.forEach((allitem) => {
       mobileMenu.classList.remove("mobile_menu_open");
     });
   });
+});
+
+// password show hide
+const eye = document.getElementById("formEye");
+const passwordInput = document.getElementById("password");
+eye.addEventListener("click", () => {
+  const inputType = passwordInput.getAttribute("type");
+
+  if (inputType === "password") {
+    passwordInput.setAttribute("type", "text");
+    eye.classList.replace("fa-eye-slash", "fa-eye");
+  } else {
+    passwordInput.setAttribute("type", "password");
+    eye.classList.replace("fa-eye", "fa-eye-slash");
+  }
 });
